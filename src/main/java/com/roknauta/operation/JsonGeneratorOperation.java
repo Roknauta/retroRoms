@@ -23,7 +23,6 @@ import java.util.stream.Collectors;
 
 public class JsonGeneratorOperation extends OperationBase implements Operation {
 
-    private static final String OPERATION_DIRECTORY = "datasource";
     private static final String XML_FOLDER = "xml";
     private static final String ACHIVMENTS_FOLDER = "retroachviments";
 
@@ -55,7 +54,7 @@ public class JsonGeneratorOperation extends OperationBase implements Operation {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-            objectMapper.writeValue(new File(getDatasourcesFolder(), sistema.getName().concat(".json")), games);
+            objectMapper.writeValue(new File(systemDirectory, sistema.getName().concat(".json")), games);
         } catch (Exception e) {
             throw new RetroRomsException(e);
         }

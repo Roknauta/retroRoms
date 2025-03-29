@@ -15,9 +15,6 @@ import java.util.*;
 
 public class SelectOperation extends OperationBase implements Operation {
 
-    private static final String EXTRACT_SOURCE = "/home/douglas/workspace/retro-roms/extracao/";
-    private static final String DESTINATION_FOLDER = "/home/douglas/workspace/retro-roms/escolhidos/";
-
     public static final String ACCEPTED_REGIONS =
         "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia";
 
@@ -29,20 +26,18 @@ public class SelectOperation extends OperationBase implements Operation {
     @Override
     public void process() {
         List<Game> gamesEscolhidos = getEscolhidos(sistema);
-        List<File> roms = loadRoms(sistema);
-        File destino = new File(DESTINATION_FOLDER);
+        List<File> roms = loadRoms();
         for (File rom : roms) {
             String md5 = getMd5Hex(rom);
             gamesEscolhidos.stream().filter(game -> !game.isUnlicensed() && game.getRom().getMd5().equals(md5))
-                .findFirst().ifPresent(gameData -> copiarArquivo(rom, destino, gameData));
+                .findFirst().ifPresent(gameData -> copiarArquivo(rom, gameData));
         }
-        System.out.println("");
     }
 
-    private void copiarArquivo(File origem, File pastaDestino, Game gameData) {
+    private void copiarArquivo(File origem, Game gameData) {
         try {
-            File destino = new File(pastaDestino, gameData.getName() + "." + gameData.getRom().getExtension());
-            if (!FileUtils.directoryContains(pastaDestino, destino))
+            File destino = new File(systemDirectory, gameData.getName() + "." + gameData.getRom().getExtension());
+            if (!FileUtils.directoryContains(systemDirectory, destino))
                 FileUtils.copyFile(origem, destino);
         } catch (IOException e) {
             throw new RetroRomsException(
@@ -110,13 +105,13 @@ public class SelectOperation extends OperationBase implements Operation {
         return Arrays.asList(ACCEPTED_REGIONS.split(","));
     }
 
-    private List<File> loadRoms(Sistema sistema) {
-        return Arrays.asList(Objects.requireNonNull(new File(EXTRACT_SOURCE, sistema.getName()).listFiles()));
+    private List<File> loadRoms() {
+        return Arrays.asList(Objects.requireNonNull(new File(diretorioOrigem, sistema.getName()).listFiles()));
     }
 
     private List<Game> loadGameData(Sistema sistema) throws IOException {
         List<Game> games;
-        File arquivo = new File(getDatasourcesFolder(), sistema + ".json");
+        File arquivo = new File(getDatasourcesFolder(), sistema.getName() + ".json");
         ObjectMapper objectMapper = new ObjectMapper();
         games = Arrays.asList(objectMapper.readValue(arquivo, Game[].class));
         return games;

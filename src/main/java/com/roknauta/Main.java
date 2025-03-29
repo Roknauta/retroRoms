@@ -5,6 +5,7 @@ import com.roknauta.domain.Sistema;
 import com.roknauta.operation.ExtractOperation;
 import com.roknauta.operation.JsonGeneratorOperation;
 import com.roknauta.operation.Operation;
+import com.roknauta.operation.SelectOperation;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.ParseException;
 
@@ -12,10 +13,20 @@ public class Main {
 
     private static final String SOURCE_PACKS = "/run/media/douglas/Games/Emulation/Packs/Prontos/";
     private static final String EXTRACT_DESTINATION = "/home/douglas/workspace/retro-roms/extracao";
+    private static final String SELECTED_DESTINATION = "/home/douglas/workspace/retro-roms/escolhidos";
 
     public static void main(String[] args) {
-        gerarJson();
+        //gerarJson();
         //extrairRoms();
+        escolherRoms();
+    }
+
+    private static void escolherRoms() {
+        OperationOptions options = new OperationOptions(EXTRACT_DESTINATION, SELECTED_DESTINATION);
+        for (Sistema sistema : Sistema.values()) {
+            System.out.println("Processando o sistema: " + sistema.getName());
+            new SelectOperation(sistema, options).process();
+        }
     }
 
     private static Option createOption(String shortName, String longName, String description, boolean required) {
@@ -33,11 +44,11 @@ public class Main {
 
     private static void gerarJson() {
         OperationOptions options =
-            new OperationOptions("/home/douglas/Documents/dat", "/home/douglas/workspace/retro-roms");
-        //new JsonGeneratorOperation(Sistema.SNES, options).process();
-        for (Sistema sistema : Sistema.values()) {
+            new OperationOptions("/home/douglas/Documents/dat", "/home/douglas/workspace/retro-roms/datasource");
+        new JsonGeneratorOperation(Sistema.CHANNEL_F, options).process();
+        /*for (Sistema sistema : Sistema.values()) {
             new JsonGeneratorOperation(sistema, options).process();
-        }
+        }*/
     }
 
     private static void processarSistema(Operation operation) {

@@ -19,14 +19,13 @@ public abstract class OperationBase {
     protected File systemDirectory;
     protected File diretorioOrigem;
     protected File diretorioDestino;
-    protected File operationFolder;
     protected Set<String> arquivosComErro;
 
     protected OperationBase(Sistema sistema, OperationOptions options) {
         this.sistema = sistema;
         this.options = options;
-        criarDiretoriosBase();
         this.arquivosComErro = new HashSet<>();
+        criarDiretoriosBase();
     }
 
     private void criarDiretoriosBase() {
