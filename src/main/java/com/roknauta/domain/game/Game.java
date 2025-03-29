@@ -21,15 +21,26 @@ public class Game {
     private List<String> regions;
     private List<String> languages;
     private boolean hasRetroAchievements;
-    @JsonIgnore
     private String licensed;
     private Rom rom;
 
-    public boolean isPirate(){
+    @JsonIgnore
+    public boolean isPirate() {
         return "2".equals(licensed);
     }
 
-    public boolean isUnlicensed(){
+    @JsonIgnore
+    public boolean isUnlicensed() {
         return "0".equals(licensed);
+    }
+
+    @JsonIgnore
+    public boolean isParent() {
+        return "P".equalsIgnoreCase(this.gameParent);
+    }
+
+    @JsonIgnore
+    public boolean isClone() {
+        return !isParent();
     }
 }

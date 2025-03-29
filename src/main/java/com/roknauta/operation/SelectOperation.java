@@ -1,18 +1,19 @@
+package com.roknauta.operation;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.roknauta.RetroRomsException;
+import com.roknauta.domain.OperationOptions;
 import com.roknauta.domain.Sistema;
 import com.roknauta.domain.game.Game;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ObjectUtils;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
 
-public class Test {
+public class SelectOperation extends OperationBase implements Operation {
 
     private static final String EXTRACT_SOURCE = "/home/douglas/workspace/retro-roms/extracao/";
     private static final String DESTINATION_FOLDER = "/home/douglas/workspace/retro-roms/escolhidos/";
@@ -20,19 +21,25 @@ public class Test {
     public static final String ACCEPTED_REGIONS =
         "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia";
 
-    public static void main(String[] args) throws IOException {
-        List<Game> gamesEscolhidos = getEscolhidos(Sistema.SNES);
-        List<File> roms = loadRoms(Sistema.SNES);
+
+    public SelectOperation(Sistema sistema, OperationOptions options) {
+        super(sistema, options);
+    }
+
+    @Override
+    public void process() {
+        List<Game> gamesEscolhidos = getEscolhidos(sistema);
+        List<File> roms = loadRoms(sistema);
         File destino = new File(DESTINATION_FOLDER);
         for (File rom : roms) {
-            String md5 = DigestUtils.md5Hex(new FileInputStream(rom));
+            String md5 = getMd5Hex(rom);
             gamesEscolhidos.stream().filter(game -> !game.isUnlicensed() && game.getRom().getMd5().equals(md5))
                 .findFirst().ifPresent(gameData -> copiarArquivo(rom, destino, gameData));
         }
         System.out.println("");
     }
 
-    private static void copiarArquivo(File origem, File pastaDestino, Game gameData) {
+    private void copiarArquivo(File origem, File pastaDestino, Game gameData) {
         try {
             File destino = new File(pastaDestino, gameData.getName() + "." + gameData.getRom().getExtension());
             if (!FileUtils.directoryContains(pastaDestino, destino))
@@ -43,7 +50,7 @@ public class Test {
         }
     }
 
-    private static List<Game> getEscolhidos(Sistema sistema) throws IOException {
+    private List<Game> getEscolhidos(Sistema sistema) {
         Map<Game, List<Game>> parentClones = mapGameData(sistema);
         List<Game> escolhidos = new ArrayList<>();
         parentClones.forEach((parent, clones) -> {
@@ -63,26 +70,30 @@ public class Test {
 
 
 
-    private static Map<Game, List<Game>> mapGameData(Sistema sistema) throws IOException {
-        List<Game> games = loadGameData(sistema);
-        List<Game> gamesParent = games.stream().filter(Game::isParent).toList();
-        List<Game> gamesClone = games.stream().filter(Game::isClone).toList();
-        Map<Game, List<Game>> parentClones = new HashMap<>();
-        gamesParent.forEach(game -> parentClones.put(game, new ArrayList<>()));
-        gamesClone.forEach(gameClone -> {
-            Game parent =
-                gamesParent.stream().filter(game -> game.getGameId().equals(gameClone.getGameParent())).findFirst()
-                    .orElse(null);
-            if (parent != null) {
-                parentClones.get(parent).add(gameClone);
-            } else {
-                parentClones.put(gameClone, Collections.singletonList(gameClone));
-            }
-        });
-        return parentClones;
+    private Map<Game, List<Game>> mapGameData(Sistema sistema) {
+        try {
+            List<Game> games = loadGameData(sistema);
+            List<Game> gamesParent = games.stream().filter(Game::isParent).toList();
+            List<Game> gamesClone = games.stream().filter(Game::isClone).toList();
+            Map<Game, List<Game>> parentClones = new HashMap<>();
+            gamesParent.forEach(game -> parentClones.put(game, new ArrayList<>()));
+            gamesClone.forEach(gameClone -> {
+                Game parent =
+                    gamesParent.stream().filter(game -> game.getGameId().equals(gameClone.getGameParent())).findFirst()
+                        .orElse(null);
+                if (parent != null) {
+                    parentClones.get(parent).add(gameClone);
+                } else {
+                    parentClones.put(gameClone, Collections.singletonList(gameClone));
+                }
+            });
+            return parentClones;
+        } catch (IOException e) {
+            throw new RetroRomsException(e);
+        }
     }
 
-    private static Game preferedGame(List<Game> games) {
+    private Game preferedGame(List<Game> games) {
         if (CollectionUtils.isNotEmpty(games)) {
             games = games.stream().sorted(Comparator.comparing(Game::getRevision).reversed()).toList();
             for (String region : getPreferedRegionsInOrder()) {
@@ -95,21 +106,19 @@ public class Test {
         return null;
     }
 
-    public static List<String> getPreferedRegionsInOrder() {
+    public List<String> getPreferedRegionsInOrder() {
         return Arrays.asList(ACCEPTED_REGIONS.split(","));
     }
 
-    private static List<File> loadRoms(Sistema sistema) {
+    private List<File> loadRoms(Sistema sistema) {
         return Arrays.asList(Objects.requireNonNull(new File(EXTRACT_SOURCE, sistema.getName()).listFiles()));
     }
 
-    private static List<Game> loadGameData(Sistema sistema) throws IOException {
+    private List<Game> loadGameData(Sistema sistema) throws IOException {
         List<Game> games;
-        String dataSourceLocation = "datasources/" + sistema.getName() + ".json";
-        File arquivo = new File(Test.class.getResource(dataSourceLocation).getFile());
+        File arquivo = new File(getDatasourcesFolder(), sistema + ".json");
         ObjectMapper objectMapper = new ObjectMapper();
         games = Arrays.asList(objectMapper.readValue(arquivo, Game[].class));
         return games;
     }
-
 }

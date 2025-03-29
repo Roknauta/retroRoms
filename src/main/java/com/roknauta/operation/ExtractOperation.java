@@ -21,6 +21,10 @@ public class ExtractOperation extends OperationBase implements Operation {
     private static final String ZIP = "zip";
     private static final String SEVEN_Z = "7z";
     private static final String OPERATION_DIRECTORY = "extracao";
+    private static final String TEMP_DIRECTORY = "temp";
+
+    private File diretorioSistema;
+    private File tempDirectory;
 
     public ExtractOperation(Sistema sistema, OperationOptions options) {
         super(sistema, options);
@@ -28,15 +32,16 @@ public class ExtractOperation extends OperationBase implements Operation {
 
     @Override
     public void process() {
-        System.out.println("Processando: " + sistema.getName());
+        criarDiretorios();
         for (File arquivo : FileUtils.listFiles(diretorioOrigem, null, true)) {
             processarArquivo(arquivo);
         }
+        tempDirectory.delete();
     }
 
-    @Override
-    public String getOperationFolder() {
-        return OPERATION_DIRECTORY;
+    private void criarDiretorios() {
+        this.diretorioSistema = criarDiretorioSeNaoExistir(diretorioDestino, sistema.getName());
+        this.tempDirectory = criarDiretorioSeNaoExistir(diretorioDestino, TEMP_DIRECTORY);
     }
 
     private void processarArquivo(File arquivo) {
@@ -52,8 +57,9 @@ public class ExtractOperation extends OperationBase implements Operation {
     private void copiarArquivoParaPastaOperacao(File origem) {
         try {
             String extension = FilenameUtils.getExtension(origem.getName());
-            File destino = new File(operationFolder, DigestUtils.md5Hex(new FileInputStream(origem)) + "." + extension);
-            if (!FileUtils.directoryContains(operationFolder, destino))
+            File destino =
+                new File(diretorioSistema, DigestUtils.md5Hex(new FileInputStream(origem)) + "." + extension);
+            if (!FileUtils.directoryContains(diretorioSistema, destino))
                 FileUtils.copyFile(origem, destino);
         } catch (IOException e) {
             throw new RetroRomsException(

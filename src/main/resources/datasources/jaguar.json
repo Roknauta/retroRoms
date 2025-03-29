@@ -1,0 +1,2961 @@
+[ {
+  "name" : "1943 (World) (Aftermarket) (Unl)",
+  "gameId" : "0173",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "95fd1e88",
+    "md5" : "cb10327e9057903b19c83e2ae62f4ec2",
+    "sha1" : "f2631769e99bca937edc34546307d706ec746528",
+    "sha256" : "ac2b471aae2a78885c6503cf98198f05a3a41eb475eaef0e4f7115a92171abab"
+  }
+}, {
+  "name" : "2048 (World) (Aftermarket) (Unl)",
+  "gameId" : "0271",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "86411eda",
+    "md5" : "08d14cfb678dadfdbea9e2dc02849f98",
+    "sha1" : "ea555f264471986fcb3b3d5e8ac8c847e6589ca3",
+    "sha256" : "ed087275c44c5df29e9c35b4c3f07241939354995382ad563a81cf5356909880"
+  }
+}, {
+  "name" : "Action Fighter (World) (Aftermarket) (Unl)",
+  "gameId" : "0174",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "6ab13181",
+    "md5" : "307f78ed01fad9ffa62464c87624cdbc",
+    "sha1" : "0e3da39ae96eee62c78da52d2a825cb9d9c9d0c7",
+    "sha256" : "107fecdbcb7ef70f6bec0703b8bf5b669c40f0f0898ac45682ddea2e3e663873"
+  }
+}, {
+  "name" : "Aircars (World) (Aftermarket) (Unl)",
+  "gameId" : "0056",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c6ce1842",
+    "md5" : "c7fb0659075c54e976543f1d3e33f1ce",
+    "sha1" : "6fccbeba3484771feeed884ad104b783d073b30d",
+    "sha256" : null
+  }
+}, {
+  "name" : "Alice's Mom's Rescue (World) (En,Fr,De,Es,It) (Aftermarket) (Unl)",
+  "gameId" : "0121",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En", "Fr", "De", "Es", "It" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2ffd99fe",
+    "md5" : "f11f06533b17d66f66b59a1d5c01ce51",
+    "sha1" : "b901037dd5afb7be656393909b9c6ecbda64bf2c",
+    "sha256" : "236ffaeabcc2ac81d67a30f32ab27d1cd77dd36939bfefddeb9c497a00434e39"
+  }
+}, {
+  "name" : "Alien Syndrome (World) (Aftermarket) (Unl)",
+  "gameId" : "0175",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ba065741",
+    "md5" : "76dd9e477f1c014804e4caabdee85426",
+    "sha1" : "c52d800a5cccc54b264c8073e2b67f5a091c0566",
+    "sha256" : "b00b44d1bdefb804ca328f0939e75e0e2317112cf2d73cb80ee539425b63493f"
+  }
+}, {
+  "name" : "Alien vs Predator (World)",
+  "gameId" : "0001",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "3eaecb25",
+    "md5" : "15d9864ce22a8786151928f5bf613b7b",
+    "sha1" : "86fd0c17c4f115cf19b96f9986446b9fc0e7da60",
+    "sha256" : null
+  }
+}, {
+  "name" : "Arena Football '95 (World) (Aftermarket) (Unl)",
+  "gameId" : "0070",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "61ee6b62",
+    "md5" : "7b9c10dcb2364ad8a11c18fc8be5c92f",
+    "sha1" : "49fce6385856239e133a66962ea7c8f60ecdd7d6",
+    "sha256" : null
+  }
+}, {
+  "name" : "Arkanoid - Revenge of DoH (World) (Aftermarket) (Unl)",
+  "gameId" : "0196",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c8f8c2dc",
+    "md5" : "ad54eef921cd544ff8fa9d304839367e",
+    "sha1" : "2c072bc6d530ceb4dde999188677557877c61a33",
+    "sha256" : "3807d32aaca76ffd39419ab08d60381332c99186131d7cb6b2f8105faee633c8"
+  }
+}, {
+  "name" : "Asteroids (World) (Aftermarket) (Unl)",
+  "gameId" : "0144",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "0369d045",
+    "md5" : "b6f644876b1ec7453f752918cb6d02de",
+    "sha1" : "98fa69271c86f6b0ca63d80862d761cb8c10deb4",
+    "sha256" : "d800b30683561fcfe8b13c8a96c4ee175402d1aaec2f1faf0071021e4b163d9d"
+  }
+}, {
+  "name" : "AstroStorm (World) (v1.43) (Digital) (Aftermarket) (Unl)",
+  "gameId" : "0240",
+  "gameParent" : "0288",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "10fe16da",
+    "md5" : "045e1655bb3349bc8cd3404ecea5eb7b",
+    "sha1" : "02c3b87d32976119e8fb8047b72d71377d4e4d72",
+    "sha256" : "b84008b8ddc38acfb13e42f804067d385636fd63cfd363666e98c455b1b89a25"
+  }
+}, {
+  "name" : "[BIOS] Atari Jaguar (World)",
+  "gameId" : "0002",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "j64",
+    "crc32" : "fb731aaa",
+    "md5" : "bcfe348c565d9dedb173822ee6850dea",
+    "sha1" : "f8991b0c385f4e5002fa2a7e2f5e61e8c5213356",
+    "sha256" : "d3f8eb881e2560cdce00738c716b9ad679128cb827493c267594f26c1c0ac744"
+  }
+}, {
+  "name" : "[BIOS] Atari Jaguar CD (World)",
+  "gameId" : "0003",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "j64",
+    "crc32" : "687068d5",
+    "md5" : "77cd95c7ad06a39f4c59995094aa10f9",
+    "sha1" : "73883e7a6e9b132452436f7ab1aeaeb0776428e5",
+    "sha256" : null
+  }
+}, {
+  "name" : "[BIOS] Atari Jaguar Developer CD (World)",
+  "gameId" : "0004",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "j64",
+    "crc32" : "55a0669c",
+    "md5" : "578de34498cb9a40c5368b6f5ca80484",
+    "sha1" : "d61b7b5912118f114ef00cf44966a5ef62e455a5",
+    "sha256" : null
+  }
+}, {
+  "name" : "[BIOS] Atari Jaguar Stubulator '93 (World)",
+  "gameId" : "0005",
+  "gameParent" : "0006",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "j64",
+    "crc32" : "e60277bb",
+    "md5" : "b509e9c13bdc527ee7ce25c5b558bc0d",
+    "sha1" : "8377ff6c6527721e2e7f8458314d782925ce4590",
+    "sha256" : null
+  }
+}, {
+  "name" : "[BIOS] Atari Jaguar Stubulator '94 (World)",
+  "gameId" : "0006",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "j64",
+    "crc32" : "8d15dbc6",
+    "md5" : "25ca8d058ed03bda3b357b7fa6a56970",
+    "sha1" : "4f87982b6e16072e58a5653a3f763c8b4b3bffcc",
+    "sha256" : null
+  }
+}, {
+  "name" : "Atari Karts (World)",
+  "gameId" : "0007",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f816c3e6",
+    "md5" : "33bb6d4d2aa39989e9aa650e4cbeee88",
+    "sha1" : "5168453c88617a58bc33cf7c18631108d6376a81",
+    "sha256" : null
+  }
+}, {
+  "name" : "Atomic (World) (Aftermarket) (Unl)",
+  "gameId" : "0146",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9bfd982e",
+    "md5" : "42f0819bff470fa09d6faec2e154632b",
+    "sha1" : "8f56432dc1869a43839a3b9d4251dc9e7b7b3279",
+    "sha256" : "5dc666f82c1de39a5803321a36320856f980ad5d0cbc13e19ee554ba11789540"
+  }
+}, {
+  "name" : "Atomic Reloaded (World) (Aftermarket) (Unl)",
+  "gameId" : "0147",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "078a5422",
+    "md5" : "c4eeb2dc08b195f52ffddb5d6006338a",
+    "sha1" : "e820131d81eb54a537baf9d160fc25fa93b60382",
+    "sha256" : "cff0e45ff4729232a808b96c4fbeabaed58e5eea972e69074d69c55ec491fabd"
+  }
+}, {
+  "name" : "Attack of the Mutant Penguins (World)",
+  "gameId" : "0008",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "66a1567c",
+    "md5" : "dbba0926aa87529bd6007fe8b4a7282a",
+    "sha1" : "53f21a5d8b382a9934cb0907a65b28a519de2c55",
+    "sha256" : null
+  }
+}, {
+  "name" : "Bad Apple (World) (Monochrome Version) (Aftermarket) (Unl)",
+  "gameId" : "0260",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "22063c96",
+    "md5" : "65579d914f04b1a45ceae8644cb80d07",
+    "sha1" : "757fa88f1894a36cf734e9f8846b1015b6468132",
+    "sha256" : "959a723c3ab3b2d61a968c7880dd7293ae3abfbdaa432e6cc5a7e2db626408e6"
+  }
+}, {
+  "name" : "Bad Apple (World) (Color Version) (Aftermarket) (Unl)",
+  "gameId" : "0261",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "a997a21d",
+    "md5" : "6f687120ad0dba46efe6ba768bd17212",
+    "sha1" : "2493fffcded46757acefc9d53099155d7f4469c8",
+    "sha256" : "a84eceed1e8595442c535fc91aa55ff9c5ff3a75589f507c04a8118559d44bec"
+  }
+}, {
+  "name" : "Badlands (World) (Aftermarket) (Unl)",
+  "gameId" : "0176",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "8d76420f",
+    "md5" : "03a867d0de5d5f8fa689fd0aa16186f1",
+    "sha1" : "e23c943e73da18c54c0c90266bbe8e0ad6e94a71",
+    "sha256" : "c2474a8c282b11b08d0a6232c66be6e5afedb30480992dd826b091e4cc8a476d"
+  }
+}, {
+  "name" : "Barbarian (World) (AMIGA) (Aftermarket) (Unl)",
+  "gameId" : "0177",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2092c7db",
+    "md5" : "130b75e969aa4c49b8f0b815be255bfd",
+    "sha1" : "ebadcf9df87d5c58eae0d84da4a7fd7ad21e1c77",
+    "sha256" : "82e1d98a1a5b48d9eece101abcb4a98571ba4e4999bb9b02d4874703015f58ba"
+  }
+}, {
+  "name" : "Barbarian (World) (Atari ST) (Aftermarket) (Unl)",
+  "gameId" : "0178",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "e36e0965",
+    "md5" : "1daf310765f2f9183344ddb7047ec391",
+    "sha1" : "af94e36a5340c1f5b5a5dc6ec49161a702ed4d08",
+    "sha256" : "406077ffc42a93b2a8a6853137716df2ffb668e54dfeb22e55fac4cefbb59a29"
+  }
+}, {
+  "name" : "Barkley Shut Up and Jam (World) (Aftermarket) (Unl)",
+  "gameId" : "0071",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "93ecef15",
+    "md5" : "b5c70890e32375ea7f91cf1db388d298",
+    "sha1" : "a1667e30fc28e93d63d50050b989db51d7528e3f",
+    "sha256" : null
+  }
+}, {
+  "name" : "Battle Sphere (World) (Aftermarket) (Unl)",
+  "gameId" : "0099",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ad6fe9b5",
+    "md5" : "6562144944b6fb86744757a5b99ae506",
+    "sha1" : "51a8269226015a4428f863ec9067d7e69762bff3",
+    "sha256" : null
+  }
+}, {
+  "name" : "Battle Sphere Gold (World) (Aftermarket) (Unl)",
+  "gameId" : "0057",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "d5727f02",
+    "md5" : "5c0b84a1a64ddbb4d3d2083958754ca5",
+    "sha1" : "1724b3163a68eb88d8a80564d58d12bc04ab6cc2",
+    "sha256" : null
+  }
+}, {
+  "name" : "Beach Volley (World) (Aftermarket) (Unl)",
+  "gameId" : "0251",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9cf9f45f",
+    "md5" : "476c28f1f048f5dade15682c20499a0c",
+    "sha1" : "fec058583d40ed4a2f29321b3431bfde954cfe55",
+    "sha256" : "1ad5f409953de5c7e1e4b8dee4d8f8f865f95a0ac7fa24b23d2224834b530c55"
+  }
+}, {
+  "name" : "Beast Busters (World) (Aftermarket) (Unl)",
+  "gameId" : "0179",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "8614a3df",
+    "md5" : "0792cd950db60b492fbc3d551ff0267d",
+    "sha1" : "a795df35f3b8fb4f366a68e1740704277e43d4c6",
+    "sha256" : "1cbb5a965f54a9a99771ac0d0e800eb7161a78e54e560d89fd126f8c1ea183e8"
+  }
+}, {
+  "name" : "Beebris (World) (Aftermarket) (Unl)",
+  "gameId" : "0132",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c36e935e",
+    "md5" : "6d5c27068b28b2f75fbd0e41b83475e0",
+    "sha1" : "31f12bf6f1b21fcfa737b7aefdb2f0340d751c44",
+    "sha256" : "0d5b36bc9a9410a7115746139a79d3cb9a38a656be04538d0d24bcc3271bbbfe"
+  }
+}, {
+  "name" : "Bionic Commando (World) (Aftermarket) (Unl)",
+  "gameId" : "0180",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "93758c35",
+    "md5" : "de7f43b49c6f0ff4480dcf92cbf2b7e8",
+    "sha1" : "f6f05ea22ce6daddb3edc11147506bd97d679bad",
+    "sha256" : "54c77c6bbf448eb489f4f34498cb5c438e71cff058693713470d41b7a56cb8c7"
+  }
+}, {
+  "name" : "Biopede (World) (v1.3) (Aftermarket) (Unl)",
+  "gameId" : "0215",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "969dd80e",
+    "md5" : "5de29b5e6689614febe5209122e8bbf3",
+    "sha1" : "74d1ed5eac61cc8ba86b14c40196885598e20abf",
+    "sha256" : "20cd4c8516f041b7970adfce2b82df7b0081c1efaa63d674b9dd54bd3266d67b"
+  }
+}, {
+  "name" : "Black Lamp (World) (Aftermarket) (Unl)",
+  "gameId" : "0181",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "770c44f5",
+    "md5" : "bbe36dafd1a9e21aa9d69cca62ecc0e2",
+    "sha1" : "d21aa9adf5f636ccd2342606cac224c22bc23483",
+    "sha256" : "d83e265f5f0fdbb5151feca156d83fa65ab14490e2dbe79feb0cf903b070e10e"
+  }
+}, {
+  "name" : "Block'em Sock'em (World) (Digital) (Aftermarket) (Unl)",
+  "gameId" : "0154",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "a42178ed",
+    "md5" : "5c56e1a04af7c01162c300496a31239f",
+    "sha1" : "7e8a0b22445f7a4b4fc2bc799df04be2f48dca0e",
+    "sha256" : "6e3ecb65f6ca259c9b98ffced76f7b6bd80ccf8ef97fbf6f9eccbea246e09569"
+  }
+}, {
+  "name" : "Breakout 2000 (USA, Europe)",
+  "gameId" : "0104",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4dd5c5de",
+    "md5" : "a4b4003c11b55d0b28aa34bb113bbde4",
+    "sha1" : "512ee251e8fa7764105f4b0d4b636a6e6e2c3c1f",
+    "sha256" : null
+  }
+}, {
+  "name" : "Brett Hull Hockey (World) (Aftermarket) (Unl)",
+  "gameId" : "0073",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "dccdef05",
+    "md5" : "e294d0251879e7e81291e3ac018261d1",
+    "sha1" : "181dc9c9cfc3e4afc59d04ea13e5464a4a82f24f",
+    "sha256" : null
+  }
+}, {
+  "name" : "Brutal Sports Football (World)",
+  "gameId" : "0009",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9c655c37",
+    "md5" : "dc5808fe55f9105fd6fb6fd220a35515",
+    "sha1" : "5129491a19588b8c7cb513e7f567585de42f1549",
+    "sha256" : null
+  }
+}, {
+  "name" : "Bubble Bobble (World) (Aftermarket) (Unl)",
+  "gameId" : "0182",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9b29deac",
+    "md5" : "44ebb09ad3781e4e3f01d267ae8b7423",
+    "sha1" : "ac0f96dd34bf7c7c8ca9bdd96627d0a849b6bb5d",
+    "sha256" : "4ebf003c7707f911ccca8cf661c19aad55ccec96f58da52d36691ec72574d4c6"
+  }
+}, {
+  "name" : "Bubsy in Fractured Furry Tales (World)",
+  "gameId" : "0010",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "278c40be",
+    "md5" : "fe2751ca61154ecfa4f0ad4299a5dc54",
+    "sha1" : "0624c22e8df7a70392d7b29993cf101a86484d17",
+    "sha256" : null
+  }
+}, {
+  "name" : "Cannon Fodder (World)",
+  "gameId" : "0011",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "31ebf18b",
+    "md5" : "460a0b1e5aa3d2d4d48d072e01343cdd",
+    "sha1" : "add3ccd479aadb3a9b0596462801339c71088e6d",
+    "sha256" : null
+  }
+}, {
+  "name" : "Checkered Flag (World)",
+  "gameId" : "0012",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "6bf22dd1",
+    "md5" : "b45c964faa34ab254ab5a5121f9432e3",
+    "sha1" : "ed24557fbaa536273c6e3894ab1399a729fd5f22",
+    "sha256" : null
+  }
+}, {
+  "name" : "Classic Kong Complete (World) (Aftermarket) (Unl)",
+  "gameId" : "0168",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4ea33886",
+    "md5" : "f50bee86f51845f632085f64fff7e97b",
+    "sha1" : "dec5f480b74deb928661700b4d57e5cf473bb904",
+    "sha256" : "fed36fbad248568526b98c3d397f0920613a3e0a2b6936890bfa61eec19cd06f"
+  }
+}, {
+  "name" : "Clicks! (World) (Aftermarket) (Unl)",
+  "gameId" : "0223",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "971e17b9",
+    "md5" : "5e6a9b5e0967c7388892676710fda05b",
+    "sha1" : "d60f510452826994bb059fe33f301611ec90c076",
+    "sha256" : "7a3a418f107ae7de85853353164884d71d5bce0474bb42c119ca0ad5f83cc9bb"
+  }
+}, {
+  "name" : "Club Drive (World)",
+  "gameId" : "0013",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "8fbdf685",
+    "md5" : "820866734a06f96e632151f2d9654dc6",
+    "sha1" : "d1b365f8534e042e0586b505ae03874a662f12df",
+    "sha256" : null
+  }
+}, {
+  "name" : "Cybermorph (World) (Rev A)",
+  "gameId" : "0014",
+  "gameParent" : "0058",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2e31aca5",
+    "md5" : "63e7e435f13a5a20ca8a2bf6e40ac27b",
+    "sha1" : "e3426cbd33fe31b77395270b71676ddda43d68e6",
+    "sha256" : null
+  }
+}, {
+  "name" : "Cybermorph (World) (Rev B)",
+  "gameId" : "0058",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c7c21726",
+    "md5" : "a2762624a57ea85875b7700aac07a61b",
+    "sha1" : "d4a0ce12f5d5c1c668cd919aaac1187cc00cadd1",
+    "sha256" : null
+  }
+}, {
+  "name" : "Cybernoid - The Fighting Machine (World) (Aftermarket) (Unl)",
+  "gameId" : "0183",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f2425c35",
+    "md5" : "a1b5152b4cd2429fe65928fc040eb87e",
+    "sha1" : "d8211c8fbb776d2d4eb687235785ec43b7a6363d",
+    "sha256" : "c2d6ceb5bb4d451459da3eed94926bc5aea803346ad51656d8c398f8a8f4bb0e"
+  }
+}, {
+  "name" : "Cybernoid II - The Revenge (World) (Aftermarket) (Unl)",
+  "gameId" : "0184",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "736b0298",
+    "md5" : "0e34335b49c5e08ccf1cf20cbdf0a1e2",
+    "sha1" : "889d04524044f18f85bac72c14f2de40486122ed",
+    "sha256" : "752e5d391f943598591cbeff753a87e48b54558a3454984fbb8bd59a1f6f4d80"
+  }
+}, {
+  "name" : "Dance Dance Xirius - Space Party (World) (Aftermarket) (Unl)",
+  "gameId" : "0247",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2bfc7ab7",
+    "md5" : "055391d93f2e6073960d2d6a372da331",
+    "sha1" : "6678d81cf48cf0d149ca954cf8b2f02c933e9b13",
+    "sha256" : "f7e61553e1dd3363352bd83d105f4453c0749a1cff6d85d87a7bbb1e1ff28967"
+  }
+}, {
+  "name" : "Darius+ (World) (Aftermarket) (Unl)",
+  "gameId" : "0185",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "19e7e4ab",
+    "md5" : "bdd94d2baa251e8e75c6bdc14cac1a04",
+    "sha1" : "d643fbbbc1d4a9948ffedb44eb7916ea6f350d05",
+    "sha256" : "17da635b60da37249e425f9b11d75ebe02786c80f573edd4b62474161fc51ce9"
+  }
+}, {
+  "name" : "Defender 2000 (World)",
+  "gameId" : "0015",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9cd0650d",
+    "md5" : "673a6f954126b22fd0d9759dd56c6650",
+    "sha1" : "982c2965cecf3a358d03cfe1ca6ae5a90f1c6f7b",
+    "sha256" : null
+  }
+}, {
+  "name" : "Degz (World) (Aftermarket) (Unl)",
+  "gameId" : "0120",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "cc8ea0ac",
+    "md5" : "9a0caf57934807c69529a9bde3ec5c6e",
+    "sha1" : "b3433c152ce10735e39b67eeb2eab2118cee2cd6",
+    "sha256" : "cfade5dc04370416a7ea64debece51440910f1d4059cec0d56fb6af78cbda6bd"
+  }
+}, {
+  "name" : "Diam Jag (World) (Aftermarket) (Unl)",
+  "gameId" : "0128",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2c0d79de",
+    "md5" : "90867fe01a1e4b32c7ea04c36e931a02",
+    "sha1" : "45a5e8e35e8e1c69aea68c0cd703defa15b83120",
+    "sha256" : "a57cabe7cfcc636e9ebddf6530076bd061efa41b8a5034965a64714abfaf9f06"
+  }
+}, {
+  "name" : "Do the Same (World) (Aftermarket) (Unl)",
+  "gameId" : "0124",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "8c3df394",
+    "md5" : "11dbfe113795120cad6a36c46f354b93",
+    "sha1" : "b1af6d52510de6841c1093b7c97ede98ec0ceb2b",
+    "sha256" : "9e694bacd2562a10f36d2693f65e6ae595c4629d2d1bcda8ed1a4f7196973a50"
+  }
+}, {
+  "name" : "Do the Same (World) (Aftermarket) (Unl) (Alt)",
+  "gameId" : "0285",
+  "gameParent" : "0124",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c33fbd0a",
+    "md5" : "4d072762d525baf09cb1fd695dd13902",
+    "sha1" : "c4ad1bf939370d3de1f3daea701a93df72d46e1f",
+    "sha256" : "39197ee4958e9764f94850d24ad7fe5956b0a86665bfb154a520e6e0b4f203a0"
+  }
+}, {
+  "name" : "Doger (World) (Aftermarket) (Unl)",
+  "gameId" : "0230",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5d637907",
+    "md5" : "8b66690b5871fc8af7938d1a92b283fd",
+    "sha1" : "00b6f320c02bb09e8d69a1faf4e8fd456dcd561f",
+    "sha256" : "e7e2a17db23f772a515fc105a5bd1e470cfc3e08b3920985c8a73f210277b55c"
+  }
+}, {
+  "name" : "Doom (World)",
+  "gameId" : "0016",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4ca68830",
+    "md5" : "1e3b7dfe15e4911bb7331f352eed3c33",
+    "sha1" : "42e3db28e5477e0d18b1d390338e8ddb1d667498",
+    "sha256" : null
+  }
+}, {
+  "name" : "Doom 2 (World) (AC 2011) (Aftermarket) (Unl)",
+  "gameId" : "0219",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "859198a5",
+    "md5" : "7f4670801e6f7fe7e1f91bac6819acd2",
+    "sha1" : "18e8f9c26715edc2d86d72cdd2b978f0a325466e",
+    "sha256" : "8bd09f24d10b46982074c69999de12d8656dc6e8d89bb0dbdeffc175afcb9d3d"
+  }
+}, {
+  "name" : "Doom 2 (World) (AC 98) (E-JagFest 2010) (Aftermarket) (Unl)",
+  "gameId" : "0220",
+  "gameParent" : "0219",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "0cdca7fa",
+    "md5" : "fe9dac2888ab311850cb6c84f028d14a",
+    "sha1" : "103b561188a8c3afb7d4e27ee9224d2a535eb1c8",
+    "sha256" : "b91571ea21e0c4d3670101892004da8ab4f6c7867a467143c6e310f30c8a2af3"
+  }
+}, {
+  "name" : "Double Dragon V - The Shadow Falls (World)",
+  "gameId" : "0017",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "a3ab2f69",
+    "md5" : "3bfff844b20ba2aea910bbd824c1eb9e",
+    "sha1" : "fd1c8b692ddd24113ad42ef520ae3cd33a5b0680",
+    "sha256" : null
+  }
+}, {
+  "name" : "Downfall (World) (Aftermarket) (Unl)",
+  "gameId" : "0119",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "544e7a01",
+    "md5" : "26588fe1623a67467adbbed3f52f0248",
+    "sha1" : "f990a6143ebe4cac4645c94398bc1c488489bcbd",
+    "sha256" : "079a04b8627c884fc22ae770d705bc1fffd600ea039542b3daa9c3398e6be3d0"
+  }
+}, {
+  "name" : "Dragon - The Bruce Lee Story (World)",
+  "gameId" : "0018",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "86ddd8e2",
+    "md5" : "f722d9fadd650c7f9bb79f7fa1e4ea8d",
+    "sha1" : "760b26f7ee7f9695806688af0a3fe2486ac65e15",
+    "sha256" : null
+  }
+}, {
+  "name" : "Dragon Breed (World) (Aftermarket) (Unl)",
+  "gameId" : "0186",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "fb4a6354",
+    "md5" : "86cc382d75701275b1ea16cc363786f9",
+    "sha1" : "8976ec4c8e075722be3e92d1a6509650290e8d60",
+    "sha256" : "f21c581aeecc7d8a9ba4c37adfd2285f49c5e35ff004874f5ed57f9125a57b16"
+  }
+}, {
+  "name" : "DragonKeep (World) (v1.01) (Aftermarket) (Unl)",
+  "gameId" : "0216",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "3b5bb4ae",
+    "md5" : "d949afd077d24858f9fcc6c8eafde02b",
+    "sha1" : "7f55aa6b7546eb1bfe1d54224b39b9ebd7688b9c",
+    "sha256" : "d219402a6cb3102b8fe8782e8084f555ca6607354252b030ffd348993a72ed0a"
+  }
+}, {
+  "name" : "Duckie Egg (World) (Aftermarket) (Unl)",
+  "gameId" : "0229",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "54c0d14f",
+    "md5" : "2e5789642304ca3f8142f6695db4b9ff",
+    "sha1" : "d6f8d9232fe6cb4d548a21d9a8e5e772482d4256",
+    "sha256" : "81bb4b00b6ed0c0db2260eb4be1649865fb3e9f5aaab86f3212a2ca1aa0dc135"
+  }
+}, {
+  "name" : "Escape from the Planet of the Robot Monsters (World) (Aftermarket) (Unl)",
+  "gameId" : "0187",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "625ffce6",
+    "md5" : "470d10f6221d91a2c4738af89d002555",
+    "sha1" : "d90846f58edae77e2f52a0ded7cb36ef3dfc1ccb",
+    "sha256" : "15b4e3ebe5a1b93d9b833382554ace915700b1ef59df261c4dab3fbbd4f76d36"
+  }
+}, {
+  "name" : "Evolution - Dino Dudes (World)",
+  "gameId" : "0019",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "a86c3324",
+    "md5" : "42cb86ba9b15da4d4bb7cb782feb9299",
+    "sha1" : "dcaca75fc27d31bfd774bec24474a66d1debc436",
+    "sha256" : null
+  }
+}, {
+  "name" : "Expressway (World) (Aftermarket) (Unl)",
+  "gameId" : "0135",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "e7624f4b",
+    "md5" : "4712a5c983b3d7e7d51f959825346ca5",
+    "sha1" : "5f228e0f075b5fec6cc5e2963222ff4f1cd90ec0",
+    "sha256" : "392abee80161c0b3f871b973b411bf10ed30fe78684914540539c7f3c859a7c9"
+  }
+}, {
+  "name" : "Fallen Angels (World) (Aftermarket) (Unl)",
+  "gameId" : "0245",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "23a30c43",
+    "md5" : "663a21e291b878288f74652b324743e2",
+    "sha1" : "12c7f25cc45c1c2a8325cd389618a9a6a3c1add8",
+    "sha256" : "73bd94c27619155ac8e919ed2430d8ed93177e0f50c7761d354eb6aeaa51d267"
+  }
+}, {
+  "name" : "Fallen Angels (World) (Aftermarket) (Unl) (Alt)",
+  "gameId" : "0280",
+  "gameParent" : "0245",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c406957a",
+    "md5" : "a9dafb092de77a8da7b2fc0d782abb35",
+    "sha1" : "7b8a0e67eba4c8f779411497b26f94248e47b594",
+    "sha256" : "9fe2ec4ebaf8d510b02edf3fc3578f62740a40aeb98d7cee76f638f8eae74968"
+  }
+}, {
+  "name" : "Fantasy World Dizzy (World) (Aftermarket) (Unl) (Alt)",
+  "gameId" : "0224",
+  "gameParent" : "0225",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "b82e67bd",
+    "md5" : "fb7a1914e0e2331ff773839bfd54603b",
+    "sha1" : "b683e7a15afd61e808b3124af14b6575440759fb",
+    "sha256" : "3c41654d98ad9fd4cd04a76fb876b4a0787c5227bdfeecd8fb6edc6368ed347d"
+  }
+}, {
+  "name" : "Fantasy World Dizzy (World) (Aftermarket) (Unl)",
+  "gameId" : "0225",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "b5ff352c",
+    "md5" : "c0c281bcca018d3019c027f9ef3e414a",
+    "sha1" : "1e3eb23532eb2d5435fc265a5c1c974518cf21fb",
+    "sha256" : "0955dfec772db6417f79af1cf7d54675766b45f00e17e1d35e29b52ebd476b15"
+  }
+}, {
+  "name" : "Fast Food 64 (World) (v1.4b) (Aftermarket) (Unl)",
+  "gameId" : "0274",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9a0e55db",
+    "md5" : "1e15817dd902b6a36d4c5b7974dcb0d3",
+    "sha1" : "65bcafe725ef3f32d79260527b3f71096deaf0ed",
+    "sha256" : "0dfc28c4b7cb79e4de4f9ca18284910bb2aa44f9e3ead49ec7236e16b307b420"
+  }
+}, {
+  "name" : "Fernandez Must Die (World) (Aftermarket) (Unl)",
+  "gameId" : "0188",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ca686f71",
+    "md5" : "c1a10de9efebc245813ea9723840e6e6",
+    "sha1" : "6414b8a544c1e32caba22db989db28857fcd4d42",
+    "sha256" : "22f2c0c1bbc79f5d2a8f12b11e714c54d278b44cfa6f3757c22be56cd9576b33"
+  }
+}, {
+  "name" : "Fever Pitch Soccer (World) (En,Fr,De,Es,It)",
+  "gameId" : "0020",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En", "Fr", "De", "Es", "It" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2ded9193",
+    "md5" : "02829e8bef858dbe61faf4854945e8d3",
+    "sha1" : "1ebf9930892a6da2196a2acebf6a34fe7af2e61a",
+    "sha256" : null
+  }
+}, {
+  "name" : "Fight for Life (USA, Europe)",
+  "gameId" : "0021",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "521c17ef",
+    "md5" : "a02a1faebc007010764ccda55019d0a4",
+    "sha1" : "9ed55e62dc4d5e1f7763136ea22a10b3e7762ae7",
+    "sha256" : null
+  }
+}, {
+  "name" : "Flashback - The Quest for Identity (World) (En,Fr)",
+  "gameId" : "0023",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En", "Fr" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "62c2f43b",
+    "md5" : "a6e4c531394dbb96d033660a6c9e1ef2",
+    "sha1" : "60068adadee3871072795104721fdacf8c129f6f",
+    "sha256" : null
+  }
+}, {
+  "name" : "Flip Out! (World)",
+  "gameId" : "0024",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "76bb7d03",
+    "md5" : "aca3200eb333cd9137d0a88673799f83",
+    "sha1" : "157be203c301d2bbebe60ea3399835be81537420",
+    "sha256" : null
+  }
+}, {
+  "name" : "Flying Shark (World) (Aftermarket) (Unl)",
+  "gameId" : "0189",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "161f6057",
+    "md5" : "74986fde07af313de7812a5f91dde288",
+    "sha1" : "9beefe98939c359ee8fc6ae946ea7c60cd84f90d",
+    "sha256" : "95b30803fc8278eafe394ed3ba7c7ddbeb6270a2baa8cc3910f5ec130376ec7e"
+  }
+}, {
+  "name" : "Frog Feast (World) (Aftermarket) (Unl)",
+  "gameId" : "0105",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "d5cd12d1",
+    "md5" : "7be16662a0ca223c2c30cd07a9c8bdc0",
+    "sha1" : "ae055f9af1c126b017f2c6df5c584ddae3fce8dd",
+    "sha256" : null
+  }
+}, {
+  "name" : "Gauntlet II (World) (Aftermarket) (Unl)",
+  "gameId" : "0190",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "1a78d317",
+    "md5" : "f3c80caa0063ed40373594711e36de25",
+    "sha1" : "2a24cbbf3652ea36ef93801b9a708437228ae928",
+    "sha256" : "dc56ffe38e73accd6063640ca04b023581cba9e1a7a3af45b19c82bf840f068e"
+  }
+}, {
+  "name" : "Gem Race (World) (Aftermarket) (Unl)",
+  "gameId" : "0244",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "0875ee0c",
+    "md5" : "8ca14622a3a2a30d6ee97b7c5180d511",
+    "sha1" : "61c6388c4780da210c1793e51375f6b4cd68c6f4",
+    "sha256" : "0b11063ebfe635c7f5c777fa4175656b5ca6d5b68212b77149c9f3c921bddcce"
+  }
+}, {
+  "name" : "Gem Race (World) (Aftermarket) (Unl) (Alt)",
+  "gameId" : "0281",
+  "gameParent" : "0244",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "159959f7",
+    "md5" : "20595e58a48ccc3dc2a84f7263e16ee3",
+    "sha1" : "f5b2ec92fcc99c4d27adac7a52fe7d1dba83ba05",
+    "sha256" : "d2381b6ffd29ed17db229f2e843bf7b548ded2bbebcb0dc4a76720debed39f2d"
+  }
+}, {
+  "name" : "Ghouls'n Ghosts (World) (Aftermarket) (Unl)",
+  "gameId" : "0191",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "55704907",
+    "md5" : "e996c521808974cc4f7b4acbefc7cc84",
+    "sha1" : "2832678e84fbea08afbba38e25e8590532948c24",
+    "sha256" : "67443ec6276430c3fb6392deed3a251c5d2258150032bc418b95ec9675b67682"
+  }
+}, {
+  "name" : "Golden Axe (World) (Atari ST) (Aftermarket) (Unl)",
+  "gameId" : "0192",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "63d96620",
+    "md5" : "32f3a8740176fcf5e912f5aeb13492bb",
+    "sha1" : "296d3e38ae0c577ee75b791cc4b8b9f144525e20",
+    "sha256" : "55611e37aae0a922e4ea950016b8d228d17848262ac4338447c83675172a6c73"
+  }
+}, {
+  "name" : "Golden Axe (World) (AMIGA) (Aftermarket) (Unl)",
+  "gameId" : "0193",
+  "gameParent" : "0192",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4a3bfc17",
+    "md5" : "3a4d429658218d2f3a0cb5a0ea384e8c",
+    "sha1" : "f5c7768ef545bc388bea0561a60a08df97d68f13",
+    "sha256" : "e60b0a893b5fd1e54884575d29fd90ef788b9c9a78d71e9e7dda41a405064a05"
+  }
+}, {
+  "name" : "Gryzzles (World) (Aftermarket) (Unl)",
+  "gameId" : "0270",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f099d4c5",
+    "md5" : "ac23c170826e85c3d6d852cf2fbd6599",
+    "sha1" : "5d0ee8e844d32fd1033d743123910460b0e573b4",
+    "sha256" : "069685b17501c99811654c54f74209cfb12e1c3f12becc6ae5309c945a1ab3b3"
+  }
+}, {
+  "name" : "Half Circle - 8biteer (World) (Aftermarket) (Unl)",
+  "gameId" : "0283",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f0a5c54a",
+    "md5" : "47783bb0e1aed5b86577ab77303891ad",
+    "sha1" : "744111a608d2e0e9561c6905ffffbd7c9a6899bd",
+    "sha256" : "9281f44e524f55f2682e08571fe1f9966c82bad98f5acf350aa7d7c1a6b5137d"
+  }
+}, {
+  "name" : "HMS RaptoR (World) (v1.1) (U-235) (Aftermarket) (Unl)",
+  "gameId" : "0170",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "0a115536",
+    "md5" : "be6fd45df046633924e75724e0dd68c6",
+    "sha1" : "bbced2bbc28fd58d2255a38b629358a59f8c2097",
+    "sha256" : "70d9422856cf7ce121f9ab94bd0431e1e6f7395e8e4d60c2e1d5ce9ea14115dd"
+  }
+}, {
+  "name" : "HMS RaptoR (World) (Aftermarket) (Unl)",
+  "gameId" : "0171",
+  "gameParent" : "0170",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "1f5a6b07",
+    "md5" : "990904f2482a9b941d48e8fbb4d6cc45",
+    "sha1" : "8b250ce687df51254d801e5fe53521f568b11b2d",
+    "sha256" : "444f19200f73cb4b0d45ccb841aa56b92f8b9fa5275e61ea866c6647b40b1bd2"
+  }
+}, {
+  "name" : "Hook (World) (Aftermarket) (Unl)",
+  "gameId" : "0197",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5b86ec9f",
+    "md5" : "a6819c5cb81eee709660ab72049a6d90",
+    "sha1" : "b44c086934ecda1a60cc5c35b29ba8b9698dcfcb",
+    "sha256" : "ed73d9cdc6abc5dffab77eb5868aeffc1cc4db8cd4da296b733c515f32963443"
+  }
+}, {
+  "name" : "Hover Strike (World)",
+  "gameId" : "0025",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "097f874a",
+    "md5" : "545b4f36992de772d48a9f13491fb894",
+    "sha1" : "76a94fea444d68cb52833bcde2eaff60fe9c4056",
+    "sha256" : null
+  }
+}, {
+  "name" : "Hyper Force (World) (Aftermarket) (Unl)",
+  "gameId" : "0053",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "08849d0f",
+    "md5" : "76cca318a6e714816c0334dad18cb64f",
+    "sha1" : "2fd81b23da884c016d66b2d776eca95164481024",
+    "sha256" : null
+  }
+}, {
+  "name" : "I-War (USA, Europe)",
+  "gameId" : "0026",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "705fa772",
+    "md5" : "a5d13bdbce3097f07121f444c430559b",
+    "sha1" : "6fa40243a9f7de26f10971a51d229a532cda5756",
+    "sha256" : null
+  }
+}, {
+  "name" : "Impulse X (World) (Aftermarket) (Unl)",
+  "gameId" : "0125",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f945032a",
+    "md5" : "8d69fb7b5c189282fee4daa22bcb8dd4",
+    "sha1" : "d5cbf99bd01e9b3323bc55c5ffead369ba8217b2",
+    "sha256" : "b21733c22ff2ebac4301fc37393c19c5246dc1aee38dcaca9c1668e54ebdd6cd"
+  }
+}, {
+  "name" : "International Sensible Soccer (World)",
+  "gameId" : "0037",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "886ddcbf",
+    "md5" : "01c61fa627f1bd63710e5cb9c9a31c77",
+    "sha1" : "872416e82a2d2a8eae76643bdce48dcb7be3f53a",
+    "sha256" : null
+  }
+}, {
+  "name" : "Iron Soldier (World)",
+  "gameId" : "0027",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "35e538a0",
+    "md5" : "c9a25d6aaa39972388b41d5509e630fb",
+    "sha1" : "6506eb05a92079282e2d4056ce960fcb61f98717",
+    "sha256" : null
+  }
+}, {
+  "name" : "Iron Soldier 2 (World) (Aftermarket) (Unl)",
+  "gameId" : "0059",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "1e874721",
+    "md5" : "1b3678e369f9ecf8d75c9bfe7df75fbf",
+    "sha1" : "67755438598cd3ca91e357f2ba961e5d4fcfc436",
+    "sha256" : null
+  }
+}, {
+  "name" : "JagMania (World) (Aftermarket) (Unl)",
+  "gameId" : "0152",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5f8d126f",
+    "md5" : "05751921f38387efcbad6d1aea5f9661",
+    "sha1" : "8c3d7e49634b68db637ad4f4338f45ab8cd6c13a",
+    "sha256" : "6b020f8414ca3d5a1e816c4efe3da68b8bdb8b0ee582635ab4f035c5cfc57a7f"
+  }
+}, {
+  "name" : "Jagmatch (World) (Aftermarket) (Unl)",
+  "gameId" : "0250",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "b876f32e",
+    "md5" : "e630bc8f159e20b4dfd70af00b502a36",
+    "sha1" : "8685d09e1d4b526a4ff3328ed0624849cf0f757c",
+    "sha256" : "0ff196e51a45ac00c816f4de5133859b243a42fdc28c80fcee377c9e8d8033c5"
+  }
+}, {
+  "name" : "Jaguar Hockey Legends 2013 (World) (Unl)",
+  "gameId" : "0248",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "06e5f28f",
+    "md5" : "5e85e262a4696de2c233bdc0ec925a39",
+    "sha1" : "cb0b989d8c747bf2906549fd5d3ea8eca5c47410",
+    "sha256" : "c7fa8f564ee025a310e068d3935ea7926dd0d26ddc8097a4080c559e5e9728d1"
+  }
+}, {
+  "name" : "Jaguar Tetris (World) (Aftermarket) (Unl)",
+  "gameId" : "0242",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c4e3bc2f",
+    "md5" : "e4b29c5c6f940b136e5a22f9e5311c6f",
+    "sha1" : "cbb8c8fc10b219ef48cbbdc5c0521402e98f56e1",
+    "sha256" : "f656f4a47408f27634ef032d2e4a3097147fdb44c25464c733fa0acb7323ac90"
+  }
+}, {
+  "name" : "Jalaga (World) (GemTos 2023) (Aftermarket) (Unl)",
+  "gameId" : "0160",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "fc9560f1",
+    "md5" : "f310f6f90cbdda7d5c1ec4efa7cbac2f",
+    "sha1" : "f3f521091c477430eafa2c27ffb3c728bf7e4b62",
+    "sha256" : "6ee33500ba111e5be100eec7341d572621e1dfd63fc8bf6bc34ca8d28ba54d50"
+  }
+}, {
+  "name" : "Jet Set Willy (World) (Aftermarket) (Unl)",
+  "gameId" : "0198",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f8aa812e",
+    "md5" : "4492664a8585f1de954652db1a4a5d41",
+    "sha1" : "5b4a2c1c5d17f96c660019edb610fbb236c3b028",
+    "sha256" : "74da39fa2ba6791b58f4b8eb5201934b5c6f23837b815a87202b57f1ee597c22"
+  }
+}, {
+  "name" : "Jetpac (World) (Aftermarket) (Unl)",
+  "gameId" : "0246",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ea0cbf2e",
+    "md5" : "3690f583633cc314e37b0f076bd426c8",
+    "sha1" : "f2ea1befa8ce5e0f2eff1fd8ed74a10f1cb24e96",
+    "sha256" : "26a69edd6d1ba55e196b6dc93ba6fb7f17c65fcf944f9461bb104215db44ee9f"
+  }
+}, {
+  "name" : "Joust (World) (Aftermarket) (Unl)",
+  "gameId" : "0194",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "27755484",
+    "md5" : "a0a5a3d5c4a3265363215449437ec6ac",
+    "sha1" : "d3a8ac38b230fe26d043753253c820d96f657165",
+    "sha256" : "d72bf6c44bb9083260b00059cda86ec9aa245cb380a4893cf0f50336f35295f2"
+  }
+}, {
+  "name" : "Jungle Jag (World) (Aftermarket) (Unl)",
+  "gameId" : "0123",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "beaa7727",
+    "md5" : "7100a5667c73f9fbb320912c7231f1e5",
+    "sha1" : "9ee14cdf6f1b1be18cadc4ef8640f5eb96fb5c82",
+    "sha256" : "cdc592fb69a4633fb5989f7c7c8139978b9c096b7adfe1f3fd7f334d8b401a0d"
+  }
+}, {
+  "name" : "Kasumi Ninja (World)",
+  "gameId" : "0028",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : true,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "38cc27d8",
+    "md5" : "079b8059f4fc99a0e7a4c929c13f0f00",
+    "sha1" : "989d6170cd4e7f7d2cbf097e0f531063c6d511a6",
+    "sha256" : null
+  }
+}, {
+  "name" : "Klax (World) (Aftermarket) (Unl)",
+  "gameId" : "0195",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "bc93403d",
+    "md5" : "061545d23ef902d10fe264355cca668d",
+    "sha1" : "8dfcc3ca6074447da4906c29bf2c3792d24354b0",
+    "sha256" : "2c417586ba4f38924d6c8567aacf802f20692653b5f725568654e4209b02c1e9"
+  }
+}, {
+  "name" : "Kobayashi Maru (World) (Aftermarket) (Unl)",
+  "gameId" : "0130",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4f84e111",
+    "md5" : "5172e48ff4b33679366d258cb406c222",
+    "sha1" : "c3a2498f58e243f9405d70e1e2f4328d0fd3b710",
+    "sha256" : "70aa7f438c218a23c9d7a6b1d0f7ca24647152ea71ed6e49b6d3e47acbca324b"
+  }
+}, {
+  "name" : "Kobayashi Maru Final (World) (Digital) (Aftermarket) (Unl)",
+  "gameId" : "0131",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "6a8f7107",
+    "md5" : "b6b453228469a980a55e6d1c0e77dc9e",
+    "sha1" : "b30a145cd99ced33cf40ea85e94c890d279df416",
+    "sha256" : "6fa87af3ce08f927724b2c5e53feb4b7ef85cdbd95e42d7af1fec9b72ea5fb0d"
+  }
+}, {
+  "name" : "Laby sur Therouanne (World) (Aftermarket) (Unl)",
+  "gameId" : "0222",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "abs",
+    "crc32" : "bf6033af",
+    "md5" : "a5f9b52d0d4203a511eee7fad6156aec",
+    "sha1" : "699957a89914a3158c99047c1da27e34cb3506e3",
+    "sha256" : "98067a15938a59e3477833668719fd661b635289420709beeced1251d339cacf"
+  }
+}, {
+  "name" : "Martian Attack (World) (Aftermarket) (Unl)",
+  "gameId" : "0272",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "014163e3",
+    "md5" : "36e3f9cb1c3c724c0d28165ffc1d5409",
+    "sha1" : "0b2bc2c1668394538fa7502fb0e0d183ace252eb",
+    "sha256" : "83356384d26b504ce5b942b456aa0b7f3677de47a3de08b26736d813c40cb07c"
+  }
+}, {
+  "name" : "Martian Attack (World) (JagCode 2007) (Aftermarket) (Unl)",
+  "gameId" : "0273",
+  "gameParent" : "0272",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ef1694c9",
+    "md5" : "b748a6affb7f9fbf60f03d48be80ac01",
+    "sha1" : "6744bf547e9d39fcca0b3ff184f3f4bb8cf3d6e8",
+    "sha256" : "7a96280b448492e92fa638d7a404243a23cc4e4e10d6b8eaf36ca7ad397d44f4"
+  }
+}, {
+  "name" : "Midnight Resistance (World) (Aftermarket) (Unl)",
+  "gameId" : "0199",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "6e126691",
+    "md5" : "c9d4b85a77f56e528faf1aa4f5844791",
+    "sha1" : "4b63ece1041ee465f4d70706391832845a7663d4",
+    "sha256" : "8ae011a1353e51f15dc83f9e24d3feb636993076054c5d56b99b8d4f6e0f0cc9"
+  }
+}, {
+  "name" : "Missile Command 3D (World)",
+  "gameId" : "0029",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "51152b71",
+    "md5" : "e50d123659dc2b56b23ac4d0be9e5e01",
+    "sha1" : "43df682f83c675d68ae247c414a9a202082f9ad2",
+    "sha256" : null
+  }
+}, {
+  "name" : "Moon Patrol (World) (Aftermarket) (Unl)",
+  "gameId" : "0200",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "7e880ec9",
+    "md5" : "e23e668ac415fa71a4df9e80fb1ce2ca",
+    "sha1" : "bf3041ba0ab8a33d6296ab3da0bdf0b8502efb36",
+    "sha256" : "31a6a78ffea2e79d93bcb620ff30ca5e9c702c3da09b3a73ecace4223e86c7ec"
+  }
+}, {
+  "name" : "Mr. Heli (World) (Aftermarket) (Unl)",
+  "gameId" : "0201",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "8568e02b",
+    "md5" : "2347c88e2807b0685dc1fe264e26c686",
+    "sha1" : "5985908e8abf957094a1a7eed12fe4b1de1fc455",
+    "sha256" : "90dffad4af3c02750ccff51ebf1fca4a2099154ee977931daa1d7cd488d11207"
+  }
+}, {
+  "name" : "NBA Jam - Tournament Edition (USA, Europe)",
+  "gameId" : "0030",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "154827b0",
+    "md5" : "b56b6cab16dc4e70f356dd0e0cb192c7",
+    "sha1" : "115ff2be7dc5b8c853d7dab842e45585f5e09105",
+    "sha256" : null
+  }
+}, {
+  "name" : "Ninja Mission (World) (Aftermarket) (Unl)",
+  "gameId" : "0202",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "011de7fd",
+    "md5" : "afa0d2f847c3f20b87d7dac695298170",
+    "sha1" : "31c4ee91efe9fdcd9984a2444f716916b0e27ef4",
+    "sha256" : "3612a841c1f9799d3becfc584d4966cc5fe41b2f9986b75e25cc655d7d9a3544"
+  }
+}, {
+  "name" : "Operation Thunderbolt (World) (Aftermarket) (Unl)",
+  "gameId" : "0203",
+  "gameParent" : "0294",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "7eff17d4",
+    "md5" : "fa81f3b01486ebf0e685d8d1ae34375d",
+    "sha1" : "367375945e983ad5fe00d4dc868afdb4b0e3ebc5",
+    "sha256" : "3c03c91b4f10be6464fdd2d6d1a585a46e5fd7f41290651f981edcec053e7c9a"
+  }
+}, {
+  "name" : "Operation Thunderbolt (World) (v1.1) (Aftermarket) (Unl)",
+  "gameId" : "0294",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "995c1cfa",
+    "md5" : "9e8174ea9362b237879b2fbbe5bd318d",
+    "sha1" : "298a55247e4e05d454b906925a860b2660e0b721",
+    "sha256" : "3c84c6b9cdd3a7cf87ac01f8122231397726a3b806ac04e7b9be473dcc0b44a7"
+  }
+}, {
+  "name" : "Orion_'s Jaguar Collection (World) (Aftermarket) (Unl)",
+  "gameId" : "0118",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "1a37b0c1",
+    "md5" : "d39b299a630f6721f588fef194e9dbdd",
+    "sha1" : "df236e11c9244679562e6537d89f6e3a6a01579e",
+    "sha256" : "7ef7ca2ec165b3013c2b2eefd0890c6bcc5bf4acc7be97aa6bd2c523f4ca3938"
+  }
+}, {
+  "name" : "Outrun (World) (v1.1) (Aftermarket) (Unl)",
+  "gameId" : "0295",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "a7b78ae7",
+    "md5" : "8c67eb24f22dccd5d4ef802c8a6a3317",
+    "sha1" : "fdbdcbdbc00b1f59a6610f10d9ee7adb8d7cc181",
+    "sha256" : "f033b30b4ffb0549f676687e6d5599a77864db4f8b29a826246efbdd7174996f"
+  }
+}, {
+  "name" : "Outrun (World) (Aftermarket) (Unl)",
+  "gameId" : "0296",
+  "gameParent" : "0295",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5008e17b",
+    "md5" : "c50d61a8e18cd25734e08646bfe3f239",
+    "sha1" : "a1530a373f0d6e2b4e23770ff5c4aef1e1330bc5",
+    "sha256" : "3e79dbfca12cba1b9fb89af3a1807b6413f88d30df4a4da1c29a3f4df48a83b5"
+  }
+}, {
+  "name" : "Painter (World) (1995-12-29) (Unl)",
+  "gameId" : "0141",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "34b93790",
+    "md5" : "8cee8cc8fc2a9c539531fa276859eb40",
+    "sha1" : "f852b9a0b4e547b060c99618e6a51adb99de6a9b",
+    "sha256" : "f2a30b0f5b869b616ecaaa1dd885bf382640fff2b21b4ff0b8d32febc1f35969"
+  }
+}, {
+  "name" : "Passing Shot (World) (Aftermarket) (Unl)",
+  "gameId" : "0167",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "896d3839",
+    "md5" : "8cdab6414ec917ab166a79b5f71db113",
+    "sha1" : "2fabb1591ef84bc8a6b56d666c642abcb53f5294",
+    "sha256" : "d3e6e7f40545797d39ae8414a7b2654c98976da356e7594d46f79e19747a0ea1"
+  }
+}, {
+  "name" : "Phase Zero (World) (Aftermarket) (Unl)",
+  "gameId" : "0086",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "89da21ff",
+    "md5" : "accb91258c5a03a3afe98cb73aa27811",
+    "sha1" : "e30f50ff7d14dcbfe9e0ab633737ff1324a36d32",
+    "sha256" : null
+  }
+}, {
+  "name" : "Pinball Fantasies (World)",
+  "gameId" : "0031",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4a9fb36b",
+    "md5" : "c9febc453fddcb5e277d2a7daba9fbe8",
+    "sha1" : "c73995d4189e212180480621afcb1a073aa0cb1b",
+    "sha256" : null
+  }
+}, {
+  "name" : "Pitfall - The Mayan Adventure (USA, Europe)",
+  "gameId" : "0032",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4d23f07c",
+    "md5" : "b40195d569457a8453364e7b5e248237",
+    "sha1" : "4ee44f39fc3ba6dfe6e61c95efa5bc020583fd87",
+    "sha256" : null
+  }
+}, {
+  "name" : "Power Drive Rally (World)",
+  "gameId" : "0033",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c544eb43",
+    "md5" : "697dbf1fc7d4b1a693d64885a422efc8",
+    "sha1" : "407205b1ba670b4ec58f5b80162ffbb4cc823c87",
+    "sha256" : null
+  }
+}, {
+  "name" : "Protector (World) (Aftermarket) (Unl)",
+  "gameId" : "0101",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "0fd06cd1",
+    "md5" : "56ee76358738e1b2804d095d2999670a",
+    "sha1" : "0efe60c7c1230d93f0a2672bb7a1beead20d75e9",
+    "sha256" : null
+  }
+}, {
+  "name" : "Protector - Special Edition (World) (Aftermarket) (Unl)",
+  "gameId" : "0060",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5ddf9724",
+    "md5" : "d318f0d9bb8ac24d581c8f840f8ffc86",
+    "sha1" : "ce9c6ba0fd251b91feca8952afb8e5861927838b",
+    "sha256" : null
+  }
+}, {
+  "name" : "Quest, The (World) (Aftermarket) (Unl)",
+  "gameId" : "0221",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "597dd7dc",
+    "md5" : "e39c9912fbddbb9c8f31ec5acda60c68",
+    "sha1" : "2cb4b9ffa0b8754b00e32a0c72fd289b171d9570",
+    "sha256" : "b3492738697915f55eebba29faec1986aa7961ef93f8d2e87601ad5c05ccd680"
+  }
+}, {
+  "name" : "R-Type (World) (Aftermarket) (Unl)",
+  "gameId" : "0204",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "22c68bc4",
+    "md5" : "c8726c4041f80754eb60ac70545b3d3c",
+    "sha1" : "f2d187bb4269dea281260e9470523b04335793b8",
+    "sha256" : "e026110e204f293ed8d2189c19cb294d34adea1df215fe3f94c0d8b7ad60c18a"
+  }
+}, {
+  "name" : "R-Type II (World) (Aftermarket) (Unl)",
+  "gameId" : "0166",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "8b136d39",
+    "md5" : "15886a04ccfab966df7d004fa977b23c",
+    "sha1" : "81f5fe2e9ae80db43a6f964f63c379e08637f091",
+    "sha256" : "6fe733b4a3ab9396bfe08cab52636d5fbb595d73fd5abe29a23ecf76d6d4bf44"
+  }
+}, {
+  "name" : "Raiden (World)",
+  "gameId" : "0034",
+  "gameParent" : "0102",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "62049d39",
+    "md5" : "010f3eadbb8215490a7cf1505ec41276",
+    "sha1" : "ca3919eac9377c0692f1a718920cf767ce424dff",
+    "sha256" : null
+  }
+}, {
+  "name" : "Raiden (World) (Rev A)",
+  "gameId" : "0102",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2667f38d",
+    "md5" : "e75708807140b0ed5022ee14d4de03a2",
+    "sha1" : "0cfbdf73a145e7f38526569a1b27fcde3c42a829",
+    "sha256" : null
+  }
+}, {
+  "name" : "Rampage (World) (Aftermarket) (Unl)",
+  "gameId" : "0205",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "696a3dfd",
+    "md5" : "600d1b077bffe741da17090287e53a7e",
+    "sha1" : "39926c49806e3e540cf51f9305e4154aeec7ea33",
+    "sha256" : "dc0419d380c800723ceeee6d0fdfe095ebc514a7aaf723b785adbeb51ad5db49"
+  }
+}, {
+  "name" : "Rayman (World)",
+  "gameId" : "0035",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "bd551765",
+    "md5" : "8dc681817983a3d7bd889e22c40e0278",
+    "sha1" : "f08d137651648cd96dd9b5272eb085d0a796437a",
+    "sha256" : null
+  }
+}, {
+  "name" : "Rebooteroids (World) (RC1.1) (Aftermarket) (Unl)",
+  "gameId" : "0133",
+  "gameParent" : "0290",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "63938848",
+    "md5" : "0af3500bf3d1926796eca6955f06ef04",
+    "sha1" : "a9711dd924ffd50f7c23ea781d1e0577172688a0",
+    "sha256" : "2d34d1dfd920a95c810a7f0533cf35100ae67b07a20cb65054729ee0fe318aa3"
+  }
+}, {
+  "name" : "Rick Dangerous (World) (Aftermarket) (Unl)",
+  "gameId" : "0206",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "de75add9",
+    "md5" : "33259ee964d7603876b8c638d1849de0",
+    "sha1" : "be78811ce078c19e07feca8d46db6e0296477c08",
+    "sha256" : "01e209ed35feb4ab095b936c60a7aefde74f115462298c65041c3b74cd0b2fef"
+  }
+}, {
+  "name" : "Rick Dangerous 2 (World) (Aftermarket) (Unl)",
+  "gameId" : "0207",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "bbbc0536",
+    "md5" : "ffda30ae3e204df6504e297314e9f759",
+    "sha1" : "7b024723093f7e51e1633aadeb9ebcdcca45bc82",
+    "sha256" : "77b76db992837cc22cdffb4e3e108655237802ed59bb85a7602e1fe1a652af43"
+  }
+}, {
+  "name" : "Rings (World) (RC3) (Aftermarket) (Unl)",
+  "gameId" : "0277",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "88c05650",
+    "md5" : "b081832d2ee7dcff371bc98d6377b220",
+    "sha1" : "5d57931c5c2df3cb63f7a88e3efeed408466e62d",
+    "sha256" : "66b7cdbcd52e0fc0ebf0ca27197d0151aea9412f0208233a9927c4c23a62645a"
+  }
+}, {
+  "name" : "Rocks Off! (World) (Aftermarket) (Unl)",
+  "gameId" : "0134",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "95d12192",
+    "md5" : "fe85b8973957fc5035eac270d0d845b0",
+    "sha1" : "6bbc5c74d32ea8de54aab7879a1a18d04959d2fc",
+    "sha256" : "80a7afbe3c8868cd768eb538f2536c945be509c8bc6c5a381ed8aeffe5873b2f"
+  }
+}, {
+  "name" : "Ruiner Pinball (USA, Europe)",
+  "gameId" : "0036",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5c637bec",
+    "md5" : "60b7ae4d465e8577a3134f3c35929cef",
+    "sha1" : "01e19899824f730b4f7f810cfa285d29d02de11a",
+    "sha256" : null
+  }
+}, {
+  "name" : "Shoot'em up (World) (Aftermarket) (Unl)",
+  "gameId" : "0226",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2f7ab678",
+    "md5" : "2a432ae949339538c2af8303bc42d32d",
+    "sha1" : "2d747e5aaf13a71333da2b4b45f6e25998b4de5a",
+    "sha256" : "f1ab21d55bd5a6cce490513ee23fc9843fd27b039b1a1a4fa92dcea3b81f4e83"
+  }
+}, {
+  "name" : "Skyhammer (World) (Aftermarket) (Unl)",
+  "gameId" : "0061",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "4471bfa0",
+    "md5" : "c8a4a2905c304378918780bd7b5e34d9",
+    "sha1" : "fe66614441dbe0cea42dc498dca609fe5c3f8128",
+    "sha256" : null
+  }
+}, {
+  "name" : "Snowman, The (World) (Aftermarket) (Unl)",
+  "gameId" : "0262",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "c7c8b197",
+    "md5" : "2c1b415484c0d4b544e697b7f5c01e9a",
+    "sha1" : "e75e00f880baf0a64863afe931acf4b4c72a1b58",
+    "sha256" : "7c7699dfd91efe708c8b335033a3ffbe2b1e5efcd4a889fe89b68ba6732bcfa2"
+  }
+}, {
+  "name" : "Soccer Kid (World) (Beta) (Aftermarket) (Unl)",
+  "gameId" : "0062",
+  "gameParent" : "0103",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ba13ae79",
+    "md5" : "de65e7dff80f0e8197223d63947bfca5",
+    "sha1" : "4b69e6354791af82988d2df9da10ea418b58f490",
+    "sha256" : null
+  }
+}, {
+  "name" : "Soccer Kid (World) (Aftermarket) (Unl)",
+  "gameId" : "0103",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "6694cad2",
+    "md5" : "d9a95d736d7aaa161bcbb5f693ebf247",
+    "sha1" : "5883bf678a4cc23e258d4d5fe1e400660c16bf01",
+    "sha256" : null
+  }
+}, {
+  "name" : "Solomon's Key (World) (Aftermarket) (Unl)",
+  "gameId" : "0208",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f99124e9",
+    "md5" : "eddb4b5f763a648b8f6d3d7b534b4429",
+    "sha1" : "2ccc94f5df2ac4edabd34c260b0cde5f5793d980",
+    "sha256" : "4ec41a7b7ff4c7a10214796e912ee03ad2cca61b8ef6115dca6497580e31a85d"
+  }
+}, {
+  "name" : "Space War 2000 (World) (Aftermarket) (Unl)",
+  "gameId" : "0055",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "2baa92a1",
+    "md5" : "76fe9289a86f997947f38ba2d87ca5a3",
+    "sha1" : "9badf7f7970a6255eef1f90f5f8d0cc567dac0fc",
+    "sha256" : null
+  }
+}, {
+  "name" : "Star Wars (World) (Aftermarket) (Unl)",
+  "gameId" : "0209",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "d0499b8f",
+    "md5" : "c8ff10d60297b9f8848838e535a6de5a",
+    "sha1" : "7d8297a25694a093fef00c7ae5f6af71d2240805",
+    "sha256" : "e4aa4510493929b617917af7c7319654d757f5a9ecb8da97c2c360a820f3cd65"
+  }
+}, {
+  "name" : "Star Wars - Return of the Jedi (World) (Aftermarket) (Unl)",
+  "gameId" : "0210",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5854090d",
+    "md5" : "28dabeee786f58adf982a5bf184ddcd9",
+    "sha1" : "70fa8dc964ba2c8b15ad89c99dd64106533ed32b",
+    "sha256" : "ab156baf3107aba4d8747214244290f29dd461a51a4378908eec02aed116e7c9"
+  }
+}, {
+  "name" : "Star Wars - The Empire Strikes Back (World) (Aftermarket) (Unl)",
+  "gameId" : "0211",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "5b66ce11",
+    "md5" : "84801775df087198c12b2b2b0dde8f53",
+    "sha1" : "f46910253e429e00a8dd7414f7cece24e03e213d",
+    "sha256" : "d2f6aa656305eac9707fb4494e6f6ed721f85a4a77a7f5d7e1379c6ca639d188"
+  }
+}, {
+  "name" : "Strider (World) (Aftermarket) (Unl)",
+  "gameId" : "0212",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "36a2a512",
+    "md5" : "cb002f59eaa50f72cd26439b906c1642",
+    "sha1" : "b0dfa7666bd2f8982058dc9085880cba79202c9f",
+    "sha256" : "d21c9574c79e61dd86d279c182c5c753cfc6f140087ee9c8bfbe9bdba3133249"
+  }
+}, {
+  "name" : "Stunt Car Racer (World) (Aftermarket) (Unl)",
+  "gameId" : "0213",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f460f425",
+    "md5" : "a230820e015e3ca9e1d8441615c7ec49",
+    "sha1" : "d793a22b657be3ca14c1e0632eb591f08ec7f2b2",
+    "sha256" : "cfd0f6faa6a2381437d068fe34740a33d80fefd2aa8a6f472ca9fec9a186cf22"
+  }
+}, {
+  "name" : "Super Burnout (World)",
+  "gameId" : "0038",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "537457d3",
+    "md5" : "7445b031fbe1c6764451c842b9d02cc7",
+    "sha1" : "774de7c46e05c99ce1673d89feb3ca692603cc22",
+    "sha256" : null
+  }
+}, {
+  "name" : "Supercross 3D (USA, Europe)",
+  "gameId" : "0040",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "e97f8282",
+    "md5" : "bc28c6f5b48607febcfa1737451d2670",
+    "sha1" : "622d8482302e2f758fd316091228d1476b32d1f1",
+    "sha256" : null
+  }
+}, {
+  "name" : "SuperFly DX (World) (v1.1) (Aftermarket) (Unl)",
+  "gameId" : "0122",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "20e8a94e",
+    "md5" : "266c97e7cd3c09af24a6a63b22b340db",
+    "sha1" : "41076283cb9e0fc92e197cb763cb9efcfe303fcd",
+    "sha256" : "ffaafd8faf7e3da87ef0e71a35d63f149f5a85e3ed71e45b84428842185efb22"
+  }
+}, {
+  "name" : "SuperFly DX (World) (Aftermarket) (Unl)",
+  "gameId" : "0258",
+  "gameParent" : "0122",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f0b7f77a",
+    "md5" : "3e7e762522da04d349c5297574ede955",
+    "sha1" : "aa88d4d5452d99a64063b726acd024eb76c335ea",
+    "sha256" : "ff1ef0b5252d2c1318878f7e26439347910559a9e8b20f0cf2260b3a5934f27a"
+  }
+}, {
+  "name" : "Syndicate (World)",
+  "gameId" : "0041",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "e55c67ab",
+    "md5" : "69664d59a1f0ef3aaf924ff6a17e35ab",
+    "sha1" : "ee7f095d79403c569e83234a7b5401610b82f6dc",
+    "sha256" : null
+  }
+}, {
+  "name" : "Teenage Mutant Hero Turtles (World) (Aftermarket) (Unl)",
+  "gameId" : "0214",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "21056d83",
+    "md5" : "13d63907613cb40ab64a679abe5334b0",
+    "sha1" : "0632a7e3ec3d9e874edc65c3f2e91656d25d232d",
+    "sha256" : "f8b32168c20f489dc912bb661ee927f960f493c839aa339462fa1886a7f064af"
+  }
+}, {
+  "name" : "Tempest 2000 (World)",
+  "gameId" : "0042",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f5221fca",
+    "md5" : "59acf9110ba6a047abb872970a33ce68",
+    "sha1" : "563b42d2de68ed02a7e420b957709e56921b5baa",
+    "sha256" : null
+  }
+}, {
+  "name" : "Theme Park (World)",
+  "gameId" : "0043",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "76c37fc8",
+    "md5" : "b132c2b4e230874788421f8606286ebe",
+    "sha1" : "32f47cd7b261727f88b1b2d2c37e0cf524a6ddb6",
+    "sha256" : null
+  }
+}, {
+  "name" : "Total Carnage (World) (Aftermarket) (Unl)",
+  "gameId" : "0063",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "e21c7950",
+    "md5" : "6a49fe73b5855c374fe6102dc972d22b",
+    "sha1" : "7d43b85941d96319482b02537c4b2a45431e68e5",
+    "sha256" : null
+  }
+}, {
+  "name" : "Towers II - Plight of the Stargazer (USA, Europe)",
+  "gameId" : "0065",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "3241ab6a",
+    "md5" : "e630a0077066b1065aabe357d618629c",
+    "sha1" : "02a7def122325c960761ccf64c43f73d37cee332",
+    "sha256" : null
+  }
+}, {
+  "name" : "Trevor McFur in the Crescent Galaxy (World) (Rev A)",
+  "gameId" : "0044",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "97b9f885",
+    "md5" : "c6d92d3bd839c6aa301692b10d9efe76",
+    "sha1" : "31160e1d73332af61443b705653863b3a369a6bc",
+    "sha256" : null
+  }
+}, {
+  "name" : "Trevor McFur in the Crescent Galaxy (World)",
+  "gameId" : "0107",
+  "gameParent" : "0044",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "62d32c32",
+    "md5" : "84bfe188dd5424a709d217b2a13ce082",
+    "sha1" : "503e1eca6ba7767e0f1b242812700dd68540dcaa",
+    "sha256" : null
+  }
+}, {
+  "name" : "Troy Aikman NFL Football (World)",
+  "gameId" : "0045",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "33328474",
+    "md5" : "9db7dd4a07d76dd094d461f1b07dd9d7",
+    "sha1" : "c7e5fdf6bdd8abd0eb344409913a1c543b45c004",
+    "sha256" : null
+  }
+}, {
+  "name" : "Tube (World) (Aftermarket) (Unl)",
+  "gameId" : "0228",
+  "gameParent" : "0227",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "ebfd345e",
+    "md5" : "67b422982d2cacb849e07cca79752a46",
+    "sha1" : "1a531b8b1ee218acc303163a58127c8db4efcf9e",
+    "sha256" : "784d4c109971aa8417590f5c2b37cab85a1709cf60b101ed60aa91b058e3cb9d"
+  }
+}, {
+  "name" : "Tube - Second Edition (World) (Aftermarket) (Unl)",
+  "gameId" : "0227",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "17424387",
+    "md5" : "8b51346544b23be4a62fe0ba92c406d5",
+    "sha1" : "5b0f129714269d5ce427b45668bb1d24667099cb",
+    "sha256" : "654a2fbe046fb86bce0ab6147733ee341412495a75a0318016e4d8200c0cc15e"
+  }
+}, {
+  "name" : "Tube2020 (World) (RC2) (Aftermarket) (Unl)",
+  "gameId" : "0278",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "9fa2eb32",
+    "md5" : "e78571169fdf62a5327b6699632fcb6a",
+    "sha1" : "753512cece95b65b878e1171eba7ba9a15495122",
+    "sha256" : "966c7e2aac8dea2c599ca0581f0d0f4668a1313c105d4c0f7a987202158817c9"
+  }
+}, {
+  "name" : "Tube2020 (World) (RC1) (Aftermarket) (Unl)",
+  "gameId" : "0279",
+  "gameParent" : "0278",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "7e767678",
+    "md5" : "7ad06183dcfee430710764048b4acc51",
+    "sha1" : "f112504126527a346e5f7824e6f9be31094cf83a",
+    "sha256" : "7846dd05cbef4db1e51499f5ca1c7c951e87bd8841d9618a92c2b2692591fe51"
+  }
+}, {
+  "name" : "Ultra Vortek (World)",
+  "gameId" : "0047",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "e7b4f5b9",
+    "md5" : "f9a4fbd00e98543a265d96e338f880ee",
+    "sha1" : "4f9da371ee331aba815d700c4f93687c8571fd46",
+    "sha256" : null
+  }
+}, {
+  "name" : "UWOL - Quest for Money (World) (Aftermarket) (Unl)",
+  "gameId" : "0157",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "cof",
+    "crc32" : "8e301d07",
+    "md5" : "f1877a01a4e230e07f0d88a9c2f1973c",
+    "sha1" : "0852bc2696743d5753e8bd3ab2390d5f5889a504",
+    "sha256" : "dba89ecf1fbf5cdfb66a44625a9cdfa2a9a119b16cd19d3f914cc2d5d9eabc71"
+  }
+}, {
+  "name" : "Val d'Isere Skiing and Snowboarding (World)",
+  "gameId" : "0048",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "194ae39e",
+    "md5" : "d431e38bfbe341d45a67ac5c28a6edc3",
+    "sha1" : "1e0aca82fe8a41e2444d28cfa2af5cd1d05b1ae4",
+    "sha256" : null
+  }
+}, {
+  "name" : "White Men Can't Jump (USA, Europe)",
+  "gameId" : "0049",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "72c77077",
+    "md5" : "40ace17cbaa79d02646c7b575217946c",
+    "sha1" : "ddb0b3022c35283c3640546ebd574f2e15ea99e1",
+    "sha256" : null
+  }
+}, {
+  "name" : "Wolfenstein 3D (World)",
+  "gameId" : "0050",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "7b52ecd8",
+    "md5" : "e95a5d4d625640c15c1ec376eba2abee",
+    "sha1" : "8f868977af95270f5c9af373034febb544f5bd96",
+    "sha256" : null
+  }
+}, {
+  "name" : "Worms (World) (Aftermarket) (Unl)",
+  "gameId" : "0064",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "a2ebed11",
+    "md5" : "2170a7d9e7fd2bf237f58b5afcaf4723",
+    "sha1" : "f2530bf82a7d2ce48ccdda7eda7091bf976667b3",
+    "sha256" : null
+  }
+}, {
+  "name" : "Zero 5 (World) (Aftermarket) (Unl)",
+  "gameId" : "0054",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : "0",
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "0795ed13",
+    "md5" : "0dfcfdebc54dee4164f5b747d9dcbe7a",
+    "sha1" : "e704e16284f4238146cb4d86764113289e2d3364",
+    "sha256" : null
+  }
+}, {
+  "name" : "Zool 2 (World)",
+  "gameId" : "0051",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "World" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "f5b867ac",
+    "md5" : "fbe1cd9391289847c5081193308ff5ac",
+    "sha1" : "f2927c6f69552e01882ab47049e568491af8cd56",
+    "sha256" : null
+  }
+}, {
+  "name" : "Zoop (USA, Europe)",
+  "gameId" : "0052",
+  "gameParent" : "P",
+  "revision" : 0,
+  "regions" : [ "USA", "Europe" ],
+  "languages" : [ "En" ],
+  "hasRetroAchievements" : false,
+  "licensed" : null,
+  "rom" : {
+    "extension" : "rom",
+    "crc32" : "75679275",
+    "md5" : "b3821b3eba08ae049b6d994b8f0791ad",
+    "sha1" : "52005733b5e06215a9b64407767133d009349b60",
+    "sha256" : null
+  }
+} ]

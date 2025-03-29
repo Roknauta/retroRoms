@@ -10,8 +10,12 @@ import org.apache.commons.cli.ParseException;
 
 public class Main {
 
-    public static void main(String[] args) throws ParseException {
+    private static final String SOURCE_PACKS = "/run/media/douglas/Games/Emulation/Packs/Prontos/";
+    private static final String EXTRACT_DESTINATION = "/home/douglas/workspace/retro-roms/extracao";
+
+    public static void main(String[] args) {
         gerarJson();
+        //extrairRoms();
     }
 
     private static Option createOption(String shortName, String longName, String description, boolean required) {
@@ -21,9 +25,8 @@ public class Main {
 
     private static void extrairRoms() {
         for (Sistema sistema : Sistema.values()) {
-            OperationOptions options =
-                new OperationOptions("/run/media/douglas/Games/Emulation/Packs/Prontos/" + sistema.getName(),
-                    "/home/douglas/workspace/retro-roms");
+            System.out.println("Processando o sistema: " + sistema.getName());
+            OperationOptions options = new OperationOptions(SOURCE_PACKS + sistema.getName(), EXTRACT_DESTINATION);
             new ExtractOperation(sistema, options).process();
         }
     }
@@ -31,6 +34,7 @@ public class Main {
     private static void gerarJson() {
         OperationOptions options =
             new OperationOptions("/home/douglas/Documents/dat", "/home/douglas/workspace/retro-roms");
+        //new JsonGeneratorOperation(Sistema.SNES, options).process();
         for (Sistema sistema : Sistema.values()) {
             new JsonGeneratorOperation(sistema, options).process();
         }

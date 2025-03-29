@@ -55,7 +55,7 @@ public class JsonGeneratorOperation extends OperationBase implements Operation {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-            objectMapper.writeValue(new File(operationFolder, sistema.getName().concat(".json")), games);
+            objectMapper.writeValue(new File(getDatasourcesFolder(), sistema.getName().concat(".json")), games);
         } catch (Exception e) {
             throw new RetroRomsException(e);
         }
@@ -85,10 +85,5 @@ public class JsonGeneratorOperation extends OperationBase implements Operation {
         } catch (Exception e) {
             throw new RetroRomsException(e);
         }
-    }
-
-    @Override
-    protected String getOperationFolder() {
-        return OPERATION_DIRECTORY;
     }
 }

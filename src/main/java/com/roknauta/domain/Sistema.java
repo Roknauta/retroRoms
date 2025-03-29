@@ -23,7 +23,7 @@ public enum Sistema {
     GAME_GEAR("gamegear","bin,gg"),
     ATARI_2600("atari2600","a26,bin"),
     ATARI_5200("atari5200","rom, xfd, atr, atx, cdm, cas, car, bin, a52, xex"),
-    ATARI_7800("atari7800",""),
+    ATARI_7800("atari7800","a78,bin"),
     ATARI_LYNX("lynx","lnx,bll,lyx,o,bin"),
     ATARI_JAGUAR("jaguar","cue, j64, jag, cof, abs, cdi, rom"),
     COLECO_VISION("colecovision","bin, col, rom"),
