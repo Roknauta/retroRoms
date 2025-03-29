@@ -11,11 +11,11 @@ import java.util.List;
 
 public class GameFactory {
 
-    public static Game fromNoIntroDB(NoIntroGame game, boolean hasAchivement, Rom rom) {
+    public static Game fromNoIntroDB(NoIntroGame game, boolean hasAchivement, List<Rom> roms) {
         Archive archive = game.getArchive();
         return new Game(game.getName(), archive.getNumber(), archive.getClone(), toRevision(archive.getVersion1()),
             toList(archive.getRegion()), toList(archive.getLanguages()), hasAchivement, game.getArchive().getLicensed(),
-            rom);
+            roms);
     }
 
     private static List<String> toList(String str) {

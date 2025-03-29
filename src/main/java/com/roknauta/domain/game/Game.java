@@ -22,7 +22,7 @@ public class Game {
     private List<String> languages;
     private boolean hasRetroAchievements;
     private String licensed;
-    private Rom rom;
+    private List<Rom> roms;
 
     @JsonIgnore
     public boolean isPirate() {

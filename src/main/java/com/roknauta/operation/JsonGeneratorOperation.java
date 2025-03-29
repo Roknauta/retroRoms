@@ -13,6 +13,7 @@ import com.roknauta.domain.game.Game;
 import com.roknauta.domain.game.Rom;
 import com.roknauta.domain.game.factory.GameFactory;
 import com.roknauta.domain.game.factory.RomFactory;
+import org.apache.commons.collections4.CollectionUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -40,8 +41,18 @@ public class JsonGeneratorOperation extends OperationBase implements Operation {
             for (File xml : folderSistema.listFiles()) {
                 getNoIntroGamesFromXml(xml).forEach(gameXml -> {
                     if (gameXml.isValidGame()) {
-                        Rom rom = RomFactory.fromNoIntroDB(gameXml);
-                        Game game = GameFactory.fromNoIntroDB(gameXml, hashes.contains(rom.getMd5()), rom);
+                        List<Rom> roms = new ArrayList<>();
+                        gameXml.getSources().forEach(source -> {
+                            if (CollectionUtils.isNotEmpty(source.getFiles())) {
+                                source.getFiles().forEach(file -> {
+                                    Rom rom = RomFactory.fromNoIntroDB(file);
+                                    if (roms.stream().noneMatch(rom1 -> rom1.getMd5().equals(rom.getMd5())))
+                                        roms.add(rom);
+                                });
+                            }
+                        });
+                        Game game = GameFactory.fromNoIntroDB(gameXml,
+                            roms.stream().anyMatch(rom -> hashes.contains(rom.getMd5())), roms);
                         games.add(game);
                     }
                 });
@@ -54,7 +65,7 @@ public class JsonGeneratorOperation extends OperationBase implements Operation {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-            objectMapper.writeValue(new File(systemDirectory, sistema.getName().concat(".json")), games);
+            objectMapper.writeValue(new File(systemDirectory, "gameData.json"), games);
         } catch (Exception e) {
             throw new RetroRomsException(e);
         }

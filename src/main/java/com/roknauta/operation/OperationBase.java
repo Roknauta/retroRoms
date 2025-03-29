@@ -50,7 +50,7 @@ public abstract class OperationBase {
         return diretorio;
     }
 
-    protected String getMd5Hex(File file){
+    protected String getMd5Hex(File file) {
         try {
             return DigestUtils.md5Hex(new FileInputStream(file));
         } catch (IOException e) {
@@ -58,8 +58,10 @@ public abstract class OperationBase {
         }
     }
 
-    protected File getDatasourcesFolder(){
-        return new File(Objects.requireNonNull(getClass().getClassLoader().getResource("datasources")).getFile());
+    protected File getDatasourcesFolder() {
+        return new File(
+            Objects.requireNonNull(getClass().getClassLoader().getResource("datasources/" + sistema.getName()))
+                .getFile());
     }
 
 

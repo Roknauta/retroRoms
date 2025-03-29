@@ -23,6 +23,6 @@ public class NoIntroGame {
     public boolean isValidGame() {
         return CollectionUtils.isNotEmpty(this.getSources()) && this.getArchive() != null && StringUtils.isEmpty(
             this.getArchive().getDevstatus()) && this.getSources().stream()
-            .anyMatch(source -> source.getFile() != null);
+            .anyMatch(source -> CollectionUtils.isNotEmpty(source.getFiles()));
     }
 }
