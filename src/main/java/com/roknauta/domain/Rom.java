@@ -1,4 +1,4 @@
-package com.roknauta.domain.game;
+package com.roknauta.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

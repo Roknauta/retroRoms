@@ -2,12 +2,12 @@ package com.roknauta.operation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.roknauta.RetroRomsException;
-import com.roknauta.domain.OperationOptions;
+import com.roknauta.domain.Game;
+import com.roknauta.domain.Rom;
 import com.roknauta.domain.Sistema;
-import com.roknauta.domain.game.Game;
-import com.roknauta.domain.game.Rom;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,13 +29,8 @@ public class SelectOperation extends OperationBase implements Operation {
         List<File> roms = loadRoms();
         for (File rom : roms) {
             String md5 = getMd5Hex(rom);
-            gamesEscolhidos.stream().filter(game -> !game.isUnlicensed() && game.getRoms().stream()
-                .anyMatch(romData -> romData.getMd5().equals(md5))).findFirst().ifPresent(gameData -> {
-                gameData.getRoms().stream().filter(romData -> romData.getMd5().equals(md5)).findFirst()
-                    .ifPresent(romData -> {
-                        copiarArquivo(rom, gameData, romData);
-                    });
-            });
+            gamesEscolhidos.stream().filter(game -> game.getRom().getMd5().equals(md5)).findFirst()
+                .ifPresent(game -> copiarArquivo(rom, game, game.getRom()));
         }
     }
 
@@ -51,45 +46,45 @@ public class SelectOperation extends OperationBase implements Operation {
     }
 
     private List<Game> getEscolhidos() {
-        Map<Game, List<Game>> parentClones = mapGameData();
+        Map<Game, List<Game>> parentClones = mapParentWithClonesGames();
         List<Game> escolhidos = new ArrayList<>();
         parentClones.forEach((parent, clones) -> {
-            if (CollectionUtils.isEmpty(clones) || clones.stream().allMatch(game -> game.equals(parent))) {
-                escolhidos.add(parent);
-            } else {
-                List<Game> parentWithClones = new ArrayList<>(clones);
-                parentWithClones.add(parent);
-                List<Game> gamesWithRetroAchievements =
-                    parentWithClones.stream().filter(Game::isHasRetroAchievements).toList();
-                Game escolhido = preferedGame(gamesWithRetroAchievements);
-                if (escolhido == null) {
-                    escolhido = preferedGame(parentWithClones);
-                }
-                escolhidos.add(escolhido);
+            Game game = selectPreferedGame(parent, clones);
+            if (!game.isBios() || !game.isUnlicensed() || !game.isBeta() || !game.isDemo() || !game.isProto() || !game.isSample() || !game.isHasStatus()) {
+                escolhidos.add(game);
             }
         });
         return escolhidos;
     }
 
+    private Game selectPreferedGame(Game parent, List<Game> clones) {
+        if (CollectionUtils.isEmpty(clones) || clones.stream().allMatch(game -> game.equals(parent))) {
+            return parent;
+        } else {
+            List<Game> parentWithClones = new ArrayList<>(clones);
+            parentWithClones.add(parent);
+            List<Game> gamesWithRetroAchievements =
+                parentWithClones.stream().filter(Game::isHasRetroAchievements).toList();
+            Game escolhido = preferedGame(gamesWithRetroAchievements);
+            if (escolhido == null) {
+                escolhido = preferedGame(parentWithClones);
+            }
+            return escolhido;
+        }
+    }
 
-
-    private Map<Game, List<Game>> mapGameData() {
+    private Map<Game, List<Game>> mapParentWithClonesGames() {
         try {
             List<Game> games = loadGameData();
-            List<Game> gamesParent = games.stream().filter(Game::isParent).toList();
-            List<Game> gamesClone = games.stream().filter(Game::isClone).toList();
+            List<Game> parentGames = games.stream().filter(game -> StringUtils.isEmpty(game.getGameParent())).toList();
+            List<Game> cloneGames =
+                games.stream().filter(game -> StringUtils.isNotEmpty(game.getGameParent())).toList();
             Map<Game, List<Game>> parentClones = new HashMap<>();
-            gamesParent.forEach(game -> parentClones.put(game, new ArrayList<>()));
-            gamesClone.forEach(gameClone -> {
-                Game parent =
-                    gamesParent.stream().filter(game -> game.getGameId().equals(gameClone.getGameParent())).findFirst()
-                        .orElse(null);
-                if (parent != null) {
-                    parentClones.get(parent).add(gameClone);
-                } else {
-                    parentClones.put(gameClone, Collections.singletonList(gameClone));
-                }
-            });
+            parentGames.forEach(game -> parentClones.put(game, new ArrayList<>()));
+            cloneGames.forEach(
+                gameClone -> parentGames.stream().filter(game -> game.getGameId().equals(gameClone.getGameParent()))
+                    .findFirst().ifPresentOrElse(parent -> parentClones.get(parent).add(gameClone),
+                        () -> parentClones.put(gameClone, Collections.singletonList(gameClone))));
             return parentClones;
         } catch (IOException e) {
             throw new RetroRomsException(e);

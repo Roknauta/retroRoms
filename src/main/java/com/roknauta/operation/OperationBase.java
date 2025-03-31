@@ -1,7 +1,6 @@
 package com.roknauta.operation;
 
 import com.roknauta.RetroRomsException;
-import com.roknauta.domain.OperationOptions;
 import com.roknauta.domain.Sistema;
 import org.apache.commons.codec.digest.DigestUtils;
 
