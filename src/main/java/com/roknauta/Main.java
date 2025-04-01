@@ -13,18 +13,18 @@ public class Main {
     private static final String SELECTED_DESTINATION = "/home/douglas/workspace/retro-roms2/escolhidos";
 
     public static void main(String[] args) {
-        extrairRoms();
+        //extrairRoms();
         //gerarJson();
-        //escolherRoms();
+        escolherRoms();
     }
 
     private static void escolherRoms() {
         OperationOptions options = new OperationOptions(EXTRACT_DESTINATION, SELECTED_DESTINATION);
-        //new SelectOperation(Sistema.ATARI_7800, options).process();
-        for (Sistema sistema : Sistema.values()) {
+        new SelectOperation(Sistema.SNES, options).process();
+        /*for (Sistema sistema : Sistema.values()) {
             System.out.println("Processando o sistema: " + sistema.getName());
             new SelectOperation(sistema, options).process();
-        }
+        }*/
     }
 
     private static Option createOption(String shortName, String longName, String description, boolean required) {
@@ -33,12 +33,12 @@ public class Main {
     }
 
     private static void extrairRoms() {
-        /*OperationOptions options = new OperationOptions(SOURCE_PACKS + Sistema.ATARI_7800.getName(), EXTRACT_DESTINATION);
-        new ExtractOperation(Sistema.ATARI_7800, options).process();*/
-        for (Sistema sistema : Sistema.values()) {
+        OperationOptions options = new OperationOptions(SOURCE_PACKS + Sistema.SNES.getName(), EXTRACT_DESTINATION);
+        new ExtractOperation(Sistema.SNES, options).process();
+        /*for (Sistema sistema : Sistema.values()) {
             System.out.println("Processando o sistema: " + sistema.getName());
             OperationOptions options = new OperationOptions(SOURCE_PACKS + sistema.getName(), EXTRACT_DESTINATION);
             new ExtractOperation(sistema, options).process();
-        }
+        }*/
     }
 }

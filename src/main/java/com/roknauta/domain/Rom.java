@@ -16,4 +16,5 @@ public class Rom {
     private String md5;
     private String sha1;
     private String sha256;
+    private boolean hasRetroAchievements;
 }

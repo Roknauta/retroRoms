@@ -18,7 +18,6 @@ public class Game {
     private String gameParent;
     private Integer revision;
     private List<String> regions;
-    private boolean hasRetroAchievements;
     private boolean pirate;
     private boolean unlicensed;
     private boolean bios;
@@ -28,5 +27,5 @@ public class Game {
     private boolean afterMarket;
     private boolean sample;
     private boolean hasStatus;
-    private Rom rom;
+    private List<Rom> roms;
 }
