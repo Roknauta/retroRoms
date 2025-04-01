@@ -25,19 +25,10 @@ public class SelectOperation extends OperationBase implements Operation {
     @Override
     public void process() {
         List<Game> gamesEscolhidos = getEscolhidos();
-        List<File> roms = loadRoms();
-        Set<String> processedGames = new HashSet<>();
-        for (File rom : roms) {
-            String md5 = getMd5Hex(rom);
-            gamesEscolhidos.stream().filter(
-                game -> !processedGames.contains(game.getGameId()) && game.getRoms().stream()
-                    .anyMatch(gameRom -> gameRom.getMd5().equals(md5))).findFirst().ifPresent(
-                game -> game.getRoms().stream().filter(gameRom -> gameRom.getMd5().equals(md5)).findFirst()
-                    .ifPresent(gameRom -> {
-                        copiarArquivo(rom, game, gameRom);
-                        processedGames.add(game.getGameId());
-                    }));
-        }
+        Map<String, File> roms = loadRoms();
+        gamesEscolhidos.forEach(game -> game.getRoms().stream().filter(gameRom -> roms.containsKey(gameRom.getMd5()))
+            .max(Comparator.comparing(Rom::isHasRetroAchievements))
+            .ifPresent(gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), game, gameRom)));
     }
 
     private void copiarArquivo(File origem, Game gameData, Rom rom) {
@@ -114,8 +105,14 @@ public class SelectOperation extends OperationBase implements Operation {
         return Arrays.asList(ACCEPTED_REGIONS.split(","));
     }
 
-    private List<File> loadRoms() {
-        return Arrays.asList(Objects.requireNonNull(new File(diretorioOrigem, sistema.getName()).listFiles()));
+    private Map<String, File> loadRoms() {
+        File roms = criarDiretorioSeNaoExistir(diretorioOrigem, sistema.getName());
+        Map<String, File> romsMap = new HashMap<>();
+        for (File rom : Objects.requireNonNull(roms.listFiles())) {
+            String md5 = getMd5Hex(rom);
+            romsMap.put(md5, rom);
+        }
+        return romsMap;
     }
 
     private List<Game> loadGameData() throws IOException {

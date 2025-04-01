@@ -20,11 +20,11 @@ public class Main {
 
     private static void escolherRoms() {
         OperationOptions options = new OperationOptions(EXTRACT_DESTINATION, SELECTED_DESTINATION);
-        new SelectOperation(Sistema.SNES, options).process();
-        /*for (Sistema sistema : Sistema.values()) {
+        //new SelectOperation(Sistema.SNES, options).process();
+        for (Sistema sistema : Sistema.values()) {
             System.out.println("Processando o sistema: " + sistema.getName());
             new SelectOperation(sistema, options).process();
-        }*/
+        }
     }
 
     private static Option createOption(String shortName, String longName, String description, boolean required) {
