@@ -25,12 +25,9 @@ public class ExtractOperation extends OperationBase implements Operation {
     private File diretorioSistema;
     private File tempDirectory;
 
-    public ExtractOperation(Sistema sistema, OperationOptions options) {
-        super(sistema, options);
-    }
-
     @Override
-    public void process() {
+    public void process(Sistema sistema, OperationOptions options) {
+        init(sistema,options);
         criarDiretorios();
         for (File arquivo : FileUtils.listFiles(diretorioOrigem, null, true)) {
             processarArquivo(arquivo);

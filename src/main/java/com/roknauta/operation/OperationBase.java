@@ -20,7 +20,7 @@ public abstract class OperationBase {
     protected File diretorioDestino;
     protected Set<String> arquivosComErro;
 
-    protected OperationBase(Sistema sistema, OperationOptions options) {
+    protected void init(Sistema sistema, OperationOptions options) {
         this.sistema = sistema;
         this.options = options;
         this.arquivosComErro = new HashSet<>();

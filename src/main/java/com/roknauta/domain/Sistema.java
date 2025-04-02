@@ -16,7 +16,7 @@ public enum Sistema {
    GBC("gbc","gbc"),
    GBA("gba","gba"),
     N64("n64","z64,n64,v64"),
-    //NDS("nds","nds,bin"),
+    NDS("nds","nds,bin"),
     MASTER_SYSTEM("mastersystem","bin,sms"),
     MEGA_DRIVE("megadrive","bin,gen,md,sg,smd"),
     SEGA32X("sega32x","32x,smd,bin,md"),

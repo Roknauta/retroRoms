@@ -12,23 +12,32 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * Responsável por selecionar as roms já extraídas priorizando por região e que possuam retroAchievements
+ */
 public class SelectOperation extends OperationBase implements Operation {
 
-    public static final String ACCEPTED_REGIONS =
+    public static final String PREFERED_REGIONS =
         "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia,Unknown";
 
-
-    public SelectOperation(Sistema sistema, OperationOptions options) {
-        super(sistema, options);
-    }
-
     @Override
-    public void process() {
+    public void process(Sistema sistema, OperationOptions options) {
+        init(sistema,options);
         List<Game> gamesEscolhidos = getEscolhidos();
         Map<String, File> roms = loadRoms();
-        gamesEscolhidos.forEach(game -> game.getRoms().stream().filter(gameRom -> roms.containsKey(gameRom.getMd5()))
-            .max(Comparator.comparing(Rom::isHasRetroAchievements))
-            .ifPresent(gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), game, gameRom)));
+        gamesEscolhidos.forEach(game -> getPreferedRom(game, roms).ifPresent(
+            gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), game, gameRom)));
+    }
+
+    /**
+     * @param game Game from Datasource
+     * @param roms Mapa de roms (arquivos) com seus hashs md5
+     * @return Retorna o primeiro Rom (Datadource) que exista na lista de roms (arquivos) priorizando a que possua
+     * retroAchievements
+     */
+    private Optional<Rom> getPreferedRom(Game game, Map<String, File> roms) {
+        return game.getRoms().stream().filter(gameRom -> roms.containsKey(gameRom.getMd5()))
+            .max(Comparator.comparing(Rom::isHasRetroAchievements));
     }
 
     private void copiarArquivo(File origem, Game gameData, Rom rom) {
@@ -102,7 +111,7 @@ public class SelectOperation extends OperationBase implements Operation {
     }
 
     public List<String> getPreferedRegionsInOrder() {
-        return Arrays.asList(ACCEPTED_REGIONS.split(","));
+        return Arrays.asList(PREFERED_REGIONS.split(","));
     }
 
     private Map<String, File> loadRoms() {
