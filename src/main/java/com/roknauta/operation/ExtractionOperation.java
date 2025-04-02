@@ -1,8 +1,6 @@
 package com.roknauta.operation;
 
-import com.roknauta.RetroRomsException;
 import com.roknauta.domain.Sistema;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.compress.archivers.ArchiveEntry;
 import org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry;
 import org.apache.commons.compress.archivers.sevenz.SevenZFile;
@@ -15,11 +13,10 @@ import org.apache.commons.io.IOUtils;
 import java.io.*;
 import java.util.Enumeration;
 
-public class ExtractOperation extends OperationBase implements Operation {
+public class ExtractionOperation extends OperationBase implements Operation {
 
     private static final String ZIP = "zip";
     private static final String SEVEN_Z = "7z";
-    private static final String OPERATION_DIRECTORY = "extracao";
     private static final String TEMP_DIRECTORY = "temp";
 
     private File diretorioSistema;
@@ -27,7 +24,7 @@ public class ExtractOperation extends OperationBase implements Operation {
 
     @Override
     public void process(Sistema sistema, OperationOptions options) {
-        init(sistema,options);
+        init(sistema, options);
         criarDiretorios();
         for (File arquivo : FileUtils.listFiles(diretorioOrigem, null, true)) {
             processarArquivo(arquivo);
@@ -45,21 +42,9 @@ public class ExtractOperation extends OperationBase implements Operation {
             if (isZipOr7z(arquivo)) {
                 descompactarArquivo(arquivo);
             } else {
-                copiarArquivoParaPastaOperacao(arquivo);
+                copiarArquivo(arquivo, diretorioSistema,
+                    toFileName(getMd5Hex(arquivo), FilenameUtils.getExtension(arquivo.getName())));
             }
-        }
-    }
-
-    private void copiarArquivoParaPastaOperacao(File origem) {
-        try {
-            String extension = FilenameUtils.getExtension(origem.getName());
-            File destino =
-                new File(diretorioSistema, DigestUtils.md5Hex(new FileInputStream(origem)) + "." + extension);
-            if (!FileUtils.directoryContains(diretorioSistema, destino))
-                FileUtils.copyFile(origem, destino);
-        } catch (IOException e) {
-            throw new RetroRomsException(
-                "Erro ao copiar o arquivo: " + origem.getPath() + ". Detalhes: " + e.getMessage());
         }
     }
 

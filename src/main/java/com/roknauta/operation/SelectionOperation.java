@@ -6,7 +6,6 @@ import com.roknauta.domain.Game;
 import com.roknauta.domain.Rom;
 import com.roknauta.domain.Sistema;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,18 +14,19 @@ import java.util.*;
 /**
  * Responsável por selecionar as roms já extraídas priorizando por região e que possuam retroAchievements
  */
-public class SelectOperation extends OperationBase implements Operation {
+public class SelectionOperation extends OperationBase implements Operation {
 
     public static final String PREFERED_REGIONS =
         "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia,Unknown";
 
     @Override
     public void process(Sistema sistema, OperationOptions options) {
-        init(sistema,options);
+        init(sistema, options);
         List<Game> gamesEscolhidos = getEscolhidos();
         Map<String, File> roms = loadRoms();
         gamesEscolhidos.forEach(game -> getPreferedRom(game, roms).ifPresent(
-            gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), game, gameRom)));
+            gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), systemDirectory,
+                toFileName(game.getName(), gameRom.getExtension()))));
     }
 
     /**
@@ -38,17 +38,6 @@ public class SelectOperation extends OperationBase implements Operation {
     private Optional<Rom> getPreferedRom(Game game, Map<String, File> roms) {
         return game.getRoms().stream().filter(gameRom -> roms.containsKey(gameRom.getMd5()))
             .max(Comparator.comparing(Rom::isHasRetroAchievements));
-    }
-
-    private void copiarArquivo(File origem, Game gameData, Rom rom) {
-        try {
-            File destino = new File(systemDirectory, gameData.getName() + "." + rom.getExtension());
-            if (!FileUtils.directoryContains(systemDirectory, destino))
-                FileUtils.copyFile(origem, destino);
-        } catch (IOException e) {
-            throw new RetroRomsException(
-                "Erro ao copiar o arquivo: " + origem.getPath() + ". Detalhes: " + e.getMessage());
-        }
     }
 
     private List<Game> getEscolhidos() {

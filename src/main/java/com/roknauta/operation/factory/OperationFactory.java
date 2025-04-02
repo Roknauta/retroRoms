@@ -1,9 +1,8 @@
 package com.roknauta.operation.factory;
 
-import com.roknauta.RetroRomsException;
-import com.roknauta.operation.ExtractOperation;
+import com.roknauta.operation.ExtractionOperation;
 import com.roknauta.operation.Operation;
-import com.roknauta.operation.SelectOperation;
+import com.roknauta.operation.SelectionOperation;
 
 public class OperationFactory {
 
@@ -13,13 +12,13 @@ public class OperationFactory {
     public static Operation getOperationFromMothod(String codigo) {
         switch (codigo) {
             case EXTRACTION_CODE -> {
-                return new ExtractOperation();
+                return new ExtractionOperation();
             }
             case SELECTION_CODE -> {
-                return new SelectOperation();
+                return new SelectionOperation();
             }
         }
-        throw new RetroRomsException("");
+        throw new UnsupportedOperationException("Operation Method not supported: "+codigo);
     }
 
 }

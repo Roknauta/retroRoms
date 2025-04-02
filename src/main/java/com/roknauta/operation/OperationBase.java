@@ -3,6 +3,8 @@ package com.roknauta.operation;
 import com.roknauta.RetroRomsException;
 import com.roknauta.domain.Sistema;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -58,9 +60,22 @@ public abstract class OperationBase {
     }
 
     protected File getDatasourcesFolder() {
-        return new File(
-            Objects.requireNonNull(getClass().getClassLoader().getResource("datasources"))
-                .getFile());
+        return new File(Objects.requireNonNull(getClass().getClassLoader().getResource("datasources")).getFile());
+    }
+
+    protected String toFileName(String name, String extension) {
+        return name.concat(FilenameUtils.EXTENSION_SEPARATOR_STR).concat(extension);
+    }
+
+    protected void copiarArquivo(File origem, File diretorioDestino, String newFileName) {
+        try {
+            File newFile = new File(diretorioDestino, newFileName);
+            if (!FileUtils.directoryContains(diretorioDestino, newFile))
+                FileUtils.copyFile(origem, newFile);
+        } catch (IOException e) {
+            throw new RetroRomsException(
+                "Erro ao copiar o arquivo: " + origem.getPath() + ". Detalhes: " + e.getMessage());
+        }
     }
 
 
