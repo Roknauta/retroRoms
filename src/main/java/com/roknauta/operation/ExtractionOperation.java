@@ -1,6 +1,5 @@
 package com.roknauta.operation;
 
-import com.roknauta.domain.Sistema;
 import org.apache.commons.compress.archivers.ArchiveEntry;
 import org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry;
 import org.apache.commons.compress.archivers.sevenz.SevenZFile;
@@ -23,8 +22,8 @@ public class ExtractionOperation extends OperationBase implements Operation {
     private File tempDirectory;
 
     @Override
-    public void process(Sistema sistema, OperationOptions options) {
-        init(sistema, options);
+    public void process(OperationOptions options) {
+        init( options);
         criarDiretorios();
         for (File arquivo : FileUtils.listFiles(diretorioOrigem, null, true)) {
             processarArquivo(arquivo);

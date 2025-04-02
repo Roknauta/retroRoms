@@ -38,8 +38,11 @@ public enum Sistema {
     private final String name;
     private final String extensions;
 
-
     public List<String> getExtensions() {
         return Arrays.stream(this.extensions.split(",")).map(String::trim).toList();
+    }
+
+    public Sistema getByName(String name){
+        return Arrays.stream(values()).filter(sistema->sistema.getName().equals(name)).findFirst().orElse(null);
     }
 }

@@ -9,13 +9,34 @@ Este projeto tem por finalidade organizar roms de diversos emuladores baseando:
 O RetroRoms possui as seguintes funções:
 
 ## Extração de roms
-Extrai roms válidas[^1] de arquivos compactados e pastas e subpastas.
+Extrai roms válidas[^1] de arquivos compactados e pastas e subpastas. Tipo de arquivos compactados que são suportados: **zip** e **7z**
 
 
 ## Seleção de roms
 Selecionar roms pelos critérios (Futuramente os critérios serão customizados):
    - Um game por região respeitando uma ordem pré definida de regiões preferenciais.
    - Priorizando roms que possuam Retroachievements
+
+### Usando o RetroRoms
+#### Requisitos:
+- Java mínimo 21 instalado.
+- Ter última versão do jar baixada.
+
+Navegar até a pasta que se encontra o arquivo **retroRoms.jar** e executar:
+`java -jar -o <operacao> -y <sistema> - s <diretorio-origem> -t <diretorio-destino>`
+
+#### Entendendo os parâmetros:
+- -o = Tipo da operação que será efetuada conforme explicado em **Extração de roms** e **Seleção de roms**. valores possíveis: **operation** ou **selection**
+- -y = Sistema que será processado pela operação, deve se usar nomes conforme tabela **Sistemas/Emuladores suportados** e coluna **Nome Interno**.
+- s = Diretório onde se encontram as roms para serem processadas.
+- t = Diretório onde as roms processadas serão armazenadas.
+
+#### Exemplo de uso para processamento de um sistema:
+- Extração de roms
+`java -jar -o extraction -y gb - s /run/media/douglas/Games/Emulation/Packs/Prontos/gb -t /home/douglas/Documents/roms/extraction`
+
+- Seleção de roms
+`java -jar -o selection -y gb - s /home/douglas/Documents/roms/extraction/gb -t /home/douglas/Documents/roms/selection`
 
 ### Sistemas/Emuladores suportados
 

@@ -22,8 +22,8 @@ public abstract class OperationBase {
     protected File diretorioDestino;
     protected Set<String> arquivosComErro;
 
-    protected void init(Sistema sistema, OperationOptions options) {
-        this.sistema = sistema;
+    protected void init(OperationOptions options) {
+        this.sistema = options.getSistema();
         this.options = options;
         this.arquivosComErro = new HashSet<>();
         criarDiretoriosBase();

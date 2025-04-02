@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.roknauta.RetroRomsException;
 import com.roknauta.domain.Game;
 import com.roknauta.domain.Rom;
-import com.roknauta.domain.Sistema;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.io.File;
@@ -20,8 +19,8 @@ public class SelectionOperation extends OperationBase implements Operation {
         "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia,Unknown";
 
     @Override
-    public void process(Sistema sistema, OperationOptions options) {
-        init(sistema, options);
+    public void process(OperationOptions options) {
+        init( options);
         List<Game> gamesEscolhidos = getEscolhidos();
         Map<String, File> roms = loadRoms();
         gamesEscolhidos.forEach(game -> getPreferedRom(game, roms).ifPresent(
