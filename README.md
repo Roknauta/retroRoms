@@ -13,7 +13,7 @@ Extrai roms válidas[^1] de arquivos compactados e pastas e subpastas. Tipo de a
 
 
 ## Seleção de roms
-Selecionar roms pelos critérios estabelecidos no [Arquivo de Configuração](https://github.com/Roknauta/retroRoms/edit/master/README.md#arquivo-de-configura%C3%A7%C3%A3o)
+Selecionar roms pelos critérios estabelecidos no [Arquivo de Configuração](https://github.com/Roknauta/retroRoms/blob/master/README.md#arquivo-de-configura%C3%A7%C3%A3o)
 
 ### Arquivo de Configuração
 O arquivo de configuração que pode ser baixado em: **config/config.properties** é usado para determinar os parâmetros da execução de todas as funções disponíveis, é importante ler a descrição de cada parâmetro para evitar erros durante a execução.
@@ -24,7 +24,7 @@ O arquivo de configuração que pode ser baixado em: **config/config.properties*
 - Ter última versão do jar baixada.
 - Baixar o arquivo **config.properties** na pasta **config**.
 
-Após baixar o [Arquivo de Configuração](https://github.com/Roknauta/retroRoms/edit/master/README.md#arquivo-de-configura%C3%A7%C3%A3o), abra-o e preencha cada uma dos parâmetros. Cada parâmetro tem um comentário explicativo que se inicia com o caractere `#`. Leia atentamente a cada parâmetro pois eles definem o resultado final.
+Após baixar o [Arquivo de Configuração](https://github.com/Roknauta/retroRoms/blob/master/README.md#arquivo-de-configura%C3%A7%C3%A3o), abra-o e preencha cada uma dos parâmetros. Cada parâmetro tem um comentário explicativo que se inicia com o caractere `#`. Leia atentamente a cada parâmetro pois eles definem o resultado final.
 
 **IMPORTANTE**: No parâmetro `geral.diretorio.origem`, deve ser informado sempre a raiz de onde estaõ os arquivos de origem, e dentro desta pasta os arquivos devem estar dentro de pastas correspondentes aos emuladores conforme nome usado em [Sistemas/Emuladores suportados](https://github.com/Roknauta/retroRoms?tab=readme-ov-file#sistemasemuladores-suportados)
 
