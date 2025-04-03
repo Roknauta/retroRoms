@@ -17,22 +17,23 @@ public abstract class OperationBase {
 
     protected Sistema sistema;
     protected OperationOptions options;
-    protected File systemDirectory;
-    protected File diretorioOrigem;
-    protected File diretorioDestino;
+    protected File targetDirectory;
+    protected File sourceSystemDirectory;
+    protected File targetSystemDirectory;
     protected Set<String> arquivosComErro;
 
-    protected void init(OperationOptions options) {
-        this.sistema = options.getSistema();
+    protected void init(Sistema sistema, OperationOptions options) {
+        this.sistema = sistema;
         this.options = options;
         this.arquivosComErro = new HashSet<>();
         criarDiretoriosBase();
     }
 
     private void criarDiretoriosBase() {
-        this.diretorioOrigem = new File(options.getDiretorioOrigem());
-        this.diretorioDestino = criarDiretorioSeNaoExistir(options.getDiretorioDestino());
-        this.systemDirectory = criarDiretorioSeNaoExistir(diretorioDestino, sistema.getName());
+        File sourceDirectory = new File(options.getSourceDirectory());
+        this.targetDirectory = criarDiretorioSeNaoExistir(options.getTargetDirectory());
+        this.sourceSystemDirectory = criarDiretorioSeNaoExistir(sourceDirectory, sistema.getName());
+        this.targetSystemDirectory = criarDiretorioSeNaoExistir(targetDirectory, sistema.getName());
     }
 
     protected File criarDiretorioSeNaoExistir(File parent, String nomeDiretorio) {

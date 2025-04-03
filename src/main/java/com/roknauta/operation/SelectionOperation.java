@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.roknauta.RetroRomsException;
 import com.roknauta.domain.Game;
 import com.roknauta.domain.Rom;
+import com.roknauta.domain.Sistema;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.io.File;
@@ -19,12 +20,12 @@ public class SelectionOperation extends OperationBase implements Operation {
         "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia,Unknown";
 
     @Override
-    public void process(OperationOptions options) {
-        init( options);
+    public void process(Sistema sistema, OperationOptions options) {
+        init(sistema, options);
         List<Game> gamesEscolhidos = getEscolhidos();
         Map<String, File> roms = loadRoms();
         gamesEscolhidos.forEach(game -> getPreferedRom(game, roms).ifPresent(
-            gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), systemDirectory,
+            gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), targetSystemDirectory,
                 toFileName(game.getName(), gameRom.getExtension()))));
     }
 
@@ -103,9 +104,8 @@ public class SelectionOperation extends OperationBase implements Operation {
     }
 
     private Map<String, File> loadRoms() {
-        File roms = criarDiretorioSeNaoExistir(diretorioOrigem, sistema.getName());
         Map<String, File> romsMap = new HashMap<>();
-        for (File rom : Objects.requireNonNull(roms.listFiles())) {
+        for (File rom : Objects.requireNonNull(sourceSystemDirectory.listFiles())) {
             String md5 = getMd5Hex(rom);
             romsMap.put(md5, rom);
         }

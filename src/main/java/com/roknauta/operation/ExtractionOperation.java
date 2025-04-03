@@ -1,5 +1,6 @@
 package com.roknauta.operation;
 
+import com.roknauta.domain.Sistema;
 import org.apache.commons.compress.archivers.ArchiveEntry;
 import org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry;
 import org.apache.commons.compress.archivers.sevenz.SevenZFile;
@@ -18,22 +19,20 @@ public class ExtractionOperation extends OperationBase implements Operation {
     private static final String SEVEN_Z = "7z";
     private static final String TEMP_DIRECTORY = "temp";
 
-    private File diretorioSistema;
     private File tempDirectory;
 
     @Override
-    public void process(OperationOptions options) {
-        init( options);
+    public void process(Sistema sistema, OperationOptions options) {
+        init( sistema,options);
         criarDiretorios();
-        for (File arquivo : FileUtils.listFiles(diretorioOrigem, null, true)) {
+        for (File arquivo : FileUtils.listFiles(sourceSystemDirectory, null, true)) {
             processarArquivo(arquivo);
         }
         tempDirectory.delete();
     }
 
     private void criarDiretorios() {
-        this.diretorioSistema = criarDiretorioSeNaoExistir(diretorioDestino, sistema.getName());
-        this.tempDirectory = criarDiretorioSeNaoExistir(diretorioDestino, TEMP_DIRECTORY);
+        this.tempDirectory = criarDiretorioSeNaoExistir(targetDirectory, TEMP_DIRECTORY);
     }
 
     private void processarArquivo(File arquivo) {
@@ -41,7 +40,7 @@ public class ExtractionOperation extends OperationBase implements Operation {
             if (isZipOr7z(arquivo)) {
                 descompactarArquivo(arquivo);
             } else {
-                copiarArquivo(arquivo, diretorioSistema,
+                copiarArquivo(arquivo, targetSystemDirectory,
                     toFileName(getMd5Hex(arquivo), FilenameUtils.getExtension(arquivo.getName())));
             }
         }
