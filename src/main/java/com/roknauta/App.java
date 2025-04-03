@@ -13,21 +13,22 @@ import java.util.Properties;
 
 public class App {
 
-    private final static String OPTION_CONFIG_FILE = "config_file";
-
     public static void main(String[] args) throws FileNotFoundException {
-        String configPath = "/home/douglas/workspace/git/pessoal/retroRoms/config/config.properties";
-        Properties properties = loadProperties(configPath);
+        if (args.length == 0) {
+            throw new RetroRomsException(
+                "Arquivo de configuração deve ser passado como parâmetro. Para mais informações consulte: https://github.com/Roknauta/retroRoms");
+        }
+        Properties properties = loadProperties(args[0]);
         OperationOptions options = OperationFactory.buildOptionsFromProperties(properties);
         Operation operation = OperationFactory.getOperationFromMothod(properties.getProperty("geral.operacao"));
         for (String systemName : AppUtils.stringToList(properties.getProperty("geral.sistemas"))) {
             Sistema sistema = Sistema.fromName(systemName);
             System.out.println("Processando o sistema: " + sistema.getName());
-            operation.process(sistema,options);
+            operation.process(sistema, options);
         }
     }
 
-    private static Properties loadProperties(String path){
+    private static Properties loadProperties(String path) {
         Properties properties = new Properties();
         try {
             properties.load(new FileInputStream(path));

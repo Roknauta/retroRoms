@@ -1,7 +1,6 @@
 package com.roknauta.operation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.roknauta.RetroRomsException;
 import com.roknauta.domain.Game;
 import com.roknauta.domain.Rom;
 import com.roknauta.domain.Sistema;
@@ -16,13 +15,10 @@ import java.util.*;
  */
 public class SelectionOperation extends OperationBase implements Operation {
 
-    public static final String PREFERED_REGIONS =
-        "USA,Brazil,Europe,World,Portugal,Canada,Australia,United Kingdom,New Zealand,Mexico,Argentina,Latin America,Spain,France,Italy,Germany,Greece,Sweden,Austria,Romania,Netherlands,Finland,Denmark,Hungary,Scandinavia,Japan,Hong Kong,Asia,China,Korea,Taiwan,Russia,Unknown";
-
     @Override
     public void process(Sistema sistema, OperationOptions options) {
         init(sistema, options);
-        List<Game> gamesEscolhidos = getEscolhidos();
+        List<Game> gamesEscolhidos = loadGames();
         Map<String, File> roms = loadRoms();
         gamesEscolhidos.forEach(game -> getPreferedRom(game, roms).ifPresent(
             gameRom -> copiarArquivo(roms.get(gameRom.getMd5()), targetSystemDirectory,
@@ -40,8 +36,13 @@ public class SelectionOperation extends OperationBase implements Operation {
             .max(Comparator.comparing(Rom::isHasRetroAchievements));
     }
 
-    private List<Game> getEscolhidos() {
-        Map<Game, List<Game>> parentClones = mapParentWithClonesGames();
+    private List<Game> loadGames() {
+        List<Game> games = loadGameData();
+        return options.isOneRomPerRegion() ? filterOneGamePerRegion(games) : games;
+    }
+
+    private List<Game> filterOneGamePerRegion(List<Game> games) {
+        Map<Game, List<Game>> parentClones = mapParentWithClonesGames(games);
         List<Game> escolhidos = new ArrayList<>();
         parentClones.forEach((parent, clones) -> {
             Game game = selectPreferedGame(parent, clones);
@@ -51,8 +52,30 @@ public class SelectionOperation extends OperationBase implements Operation {
     }
 
     private boolean isValidGame(Game game) {
-        return !Arrays.asList(game.isBios(), game.isUnlicensed(), game.isBeta(), game.isDemo(), game.isProto(),
-            game.isSample(), game.isAfterMarket(), game.isHasStatus(), game.isPirate()).contains(true);
+        if (gameWithValidRegion(game)) {
+            List<Boolean> flags =
+                List.of(game.isPirate(), game.isSample(), game.isAfterMarket(), game.isBeta(), game.isBios(),
+                    game.isDemo(), game.isProto(), game.isUnlicensed(), game.isHasStatus());
+            return flags.stream().noneMatch(flag -> flag) || flagWithPermission(flags);
+        }
+        return false;
+    }
+
+    private boolean flagWithPermission(List<Boolean> flags) {
+        List<Boolean> flagsOptions =
+            List.of(options.isAllowPirateRom(), options.isAllowSampleRom(), options.isAllowAfterMarketRom(),
+                options.isAllowBetaRom(), options.isAllowBiosRom(), options.isAllowDemoRom(), options.isAllowProtoRom(),
+                options.isAllowUnlicensedRom(), options.isAllowRomWithStatus());
+        for (int i = 0; i < flags.size(); i++) {
+            if (flags.get(i) && flagsOptions.get(i)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean gameWithValidRegion(Game game) {
+        return game.getRegions().stream().allMatch(region -> options.getAcceptedRegions().contains(region));
     }
 
     private Game selectPreferedGame(Game parent, List<Game> clones) {
@@ -65,21 +88,16 @@ public class SelectionOperation extends OperationBase implements Operation {
         }
     }
 
-    private Map<Game, List<Game>> mapParentWithClonesGames() {
-        try {
-            List<Game> games = loadGameData();
-            List<Game> parentGames = games.stream().filter(game -> "P".equals(game.getGameParent())).toList();
-            List<Game> cloneGames = games.stream().filter(game -> !"P".equals(game.getGameParent())).toList();
-            Map<Game, List<Game>> parentClones = new HashMap<>();
-            parentGames.forEach(game -> parentClones.put(game, new ArrayList<>()));
-            cloneGames.forEach(
-                gameClone -> parentGames.stream().filter(game -> game.getGameId().equals(gameClone.getGameParent()))
-                    .findFirst().ifPresentOrElse(parent -> parentClones.get(parent).add(gameClone),
-                        () -> parentClones.put(gameClone, Collections.singletonList(gameClone))));
-            return parentClones;
-        } catch (IOException e) {
-            throw new RetroRomsException(e);
-        }
+    private Map<Game, List<Game>> mapParentWithClonesGames(List<Game> games) {
+        List<Game> parentGames = games.stream().filter(game -> "P".equals(game.getGameParent())).toList();
+        List<Game> cloneGames = games.stream().filter(game -> !"P".equals(game.getGameParent())).toList();
+        Map<Game, List<Game>> parentClones = new HashMap<>();
+        parentGames.forEach(game -> parentClones.put(game, new ArrayList<>()));
+        cloneGames.forEach(
+            gameClone -> parentGames.stream().filter(game -> game.getGameId().equals(gameClone.getGameParent()))
+                .findFirst().ifPresentOrElse(parent -> parentClones.get(parent).add(gameClone),
+                    () -> parentClones.put(gameClone, Collections.singletonList(gameClone))));
+        return parentClones;
     }
 
     /**
@@ -88,7 +106,7 @@ public class SelectionOperation extends OperationBase implements Operation {
      */
     private Game getFirstGameByPreferedRegion(List<Game> games) {
         if (CollectionUtils.isNotEmpty(games)) {
-            for (String region : getPreferedRegionsInOrder()) {
+            for (String region : options.getAcceptedRegions()) {
                 Game selectedGame = games.stream().filter(game -> game.getRegions().contains(region))
                     .max(Comparator.comparing(Game::getRevision)).orElse(null);
                 if (selectedGame != null) {
@@ -97,10 +115,6 @@ public class SelectionOperation extends OperationBase implements Operation {
             }
         }
         return null;
-    }
-
-    public List<String> getPreferedRegionsInOrder() {
-        return Arrays.asList(PREFERED_REGIONS.split(","));
     }
 
     private Map<String, File> loadRoms() {
@@ -112,9 +126,13 @@ public class SelectionOperation extends OperationBase implements Operation {
         return romsMap;
     }
 
-    private List<Game> loadGameData() throws IOException {
+    private List<Game> loadGameData() {
         File arquivo = new File(getDatasourcesFolder(), sistema.getName() + ".json");
         ObjectMapper objectMapper = new ObjectMapper();
-        return Arrays.stream(objectMapper.readValue(arquivo, Game[].class)).filter(this::isValidGame).toList();
+        try {
+            return Arrays.stream(objectMapper.readValue(arquivo, Game[].class)).filter(this::isValidGame).toList();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -8,6 +8,7 @@ import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Objects;
@@ -30,7 +31,7 @@ public abstract class OperationBase {
     }
 
     private void criarDiretoriosBase() {
-        File sourceDirectory = new File(options.getSourceDirectory());
+        File sourceDirectory = getDirectoryOrThrow(options.getSourceDirectory());
         this.targetDirectory = criarDiretorioSeNaoExistir(options.getTargetDirectory());
         this.sourceSystemDirectory = criarDiretorioSeNaoExistir(sourceDirectory, sistema.getName());
         this.targetSystemDirectory = criarDiretorioSeNaoExistir(targetDirectory, sistema.getName());
@@ -58,6 +59,13 @@ public abstract class OperationBase {
         } catch (IOException e) {
             throw new RetroRomsException(e);
         }
+    }
+
+    private File getDirectoryOrThrow(String path) {
+        File directory = new File(path);
+        if (!directory.exists())
+            throw new RetroRomsException("Diretório não encontrado: " + path);
+        return directory;
     }
 
     protected File getDatasourcesFolder() {
