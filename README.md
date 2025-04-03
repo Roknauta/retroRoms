@@ -13,30 +13,30 @@ Extrai roms válidas[^1] de arquivos compactados e pastas e subpastas. Tipo de a
 
 
 ## Seleção de roms
-Selecionar roms pelos critérios (Futuramente os critérios serão customizados):
-   - Um game por região respeitando uma ordem pré definida de regiões preferenciais.
-   - Priorizando roms que possuam Retroachievements
+Selecionar roms pelos critérios estabelecidos no [Arquivo de Configuração](https://github.com/Roknauta/retroRoms/edit/master/README.md#arquivo-de-configura%C3%A7%C3%A3o)
+
+### Arquivo de Configuração
+O arquivo de configuração que pode ser baixado em: **config/config.properties** é usado para determinar os parâmetros da execução de todas as funções disponíveis, é importante ler a descrição de cada parâmetro para evitar erros durante a execução.
 
 ### Usando o RetroRoms
 #### Requisitos:
 - Java mínimo 21 instalado.
 - Ter última versão do jar baixada.
+- Baixar o arquivo **config.properties** na pasta **config**.
 
-Navegar até a pasta que se encontra o arquivo **retroRoms.jar** e executar:
-`java -jar -o <operacao> -y <sistema> - s <diretorio-origem> -t <diretorio-destino>`
+Após baixar o [Arquivo de Configuração](https://github.com/Roknauta/retroRoms/edit/master/README.md#arquivo-de-configura%C3%A7%C3%A3o), abra-o e preencha cada uma dos parâmetros. Cada parâmetro tem um comentário explicativo que se inicia com o caractere `#`. Leia atentamente a cada parâmetro pois eles definem o resultado final.
 
-#### Entendendo os parâmetros:
-- -o = Tipo da operação que será efetuada conforme explicado em **Extração de roms** e **Seleção de roms**. valores possíveis: **operation** ou **selection**
-- -y = Sistema que será processado pela operação, deve se usar nomes conforme tabela **Sistemas/Emuladores suportados** e coluna **Nome Interno**.
-- s = Diretório onde se encontram as roms para serem processadas.
-- t = Diretório onde as roms processadas serão armazenadas.
+**IMPORTANTE**: No parâmetro `geral.diretorio.origem`, deve ser informado sempre a raiz de onde estaõ os arquivos de origem, e dentro desta pasta os arquivos devem estar dentro de pastas correspondentes aos emuladores conforme nome usado em [Sistemas/Emuladores suportados](https://github.com/Roknauta/retroRoms?tab=readme-ov-file#sistemasemuladores-suportados)
 
-#### Exemplo de uso para processamento de um sistema:
-- Extração de roms
-`java -jar -o extraction -y gb - s /run/media/douglas/Games/Emulation/Packs/Prontos/gb -t /home/douglas/Documents/roms/extraction`
+Exemplo de uso no arquivo config.properties:</br>
+`geral.operacao=extracao` </br>
+`geral.sistemas=gb,gbc`</br>
+`geral.diretorio.origem=/run/media/douglas/Games/Emulation/Packs/Prontos`
 
-- Seleção de roms
-`java -jar -o selection -y gb - s /home/douglas/Documents/roms/extraction/gb -t /home/douglas/Documents/roms/selection`
+Notar que como vou processar 2 sistemas (gb, gbc), no diretório **/run/media/douglas/Games/Emulation/Packs/Prontos** devem existir as pastas **gb** e **gbc** com o conteúdo dentro das respectivas pastas.
+
+Para executar, basta abrir o terminal (cmd no Windows) e executar: 
+`java -jar retroRoms.jar <caminho_carquivo_de_configuração>`
 
 ### Sistemas/Emuladores suportados
 
