@@ -69,7 +69,7 @@ public abstract class OperationBase {
     }
 
     protected File getDatasourcesFolder() {
-        return new File(".", "datasources");
+        return new File( "datasources");
     }
 
     protected String toFileName(String name, String extension) {
