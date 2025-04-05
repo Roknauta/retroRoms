@@ -4,11 +4,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.roknauta.domain.Game;
 import com.roknauta.domain.Rom;
 import com.roknauta.domain.Sistema;
+import com.roknauta.utils.AppUtils;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.jar.JarFile;
 
 /**
  * Responsável por selecionar as roms já extraídas priorizando por região e que possuam retroAchievements
@@ -127,10 +130,30 @@ public class SelectionOperation extends OperationBase implements Operation {
     }
 
     private List<Game> loadGameData() {
-        File arquivo = new File(getDatasourcesFolder(), sistema.getName() + ".json");
+        File arquivo = getDatasource();
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             return Arrays.stream(objectMapper.readValue(arquivo, Game[].class)).filter(this::isValidGame).toList();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public File getDatasource() {
+        try {
+            String dataSourceName = toFileName(sistema.getName(), "json");
+            final String path = "datasources/" + dataSourceName;
+            final File jarFile = new File(AppUtils.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+            if (jarFile.isFile()) {
+                final JarFile jar = new JarFile(jarFile);
+                File dataSource = new File(System.getProperty("java.io.tmpdir"), dataSourceName);
+                if (!dataSource.exists()) {
+                    FileUtils.copyInputStreamToFile(jar.getInputStream(jar.getJarEntry(path)), dataSource);
+                }
+                jar.close();
+                return dataSource;
+            }
+            return new File(getClass().getClassLoader().getResource(path).getFile());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

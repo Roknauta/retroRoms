@@ -8,10 +8,8 @@ import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 public abstract class OperationBase {
@@ -66,10 +64,6 @@ public abstract class OperationBase {
         if (!directory.exists())
             throw new RetroRomsException("Diretório não encontrado: " + path);
         return directory;
-    }
-
-    protected File getDatasourcesFolder() {
-        return new File( "datasources");
     }
 
     protected String toFileName(String name, String extension) {
