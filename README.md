@@ -1,5 +1,7 @@
 # RetroRoms - Organização de roms de diversos emuladores.
 
+[Vídeo Explicativo](https://www.youtube.com/watch?v=HZz3fNiLiQI)
+
 Este projeto tem por finalidade organizar roms de diversos emuladores baseando:
 - Na base de dados do NoIntro.
 - Na convenção de nomes de sistemas(emuladores) e nas extensões de roms usadas pelo Batocera.
